@@ -1,0 +1,986 @@
+2025-09-26 19:35:02,856 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:35:02,856 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:35:02,856 _action_executor_original INFO ActionExecutor initialized with action delay 0.5s.
+2025-09-26 19:35:02,856 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:35:02,867 __main__ INFO Starting interactive mode.
+2025-09-26 19:35:02,867 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:35:02,868 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:35:27,641 __main__ INFO Starting new screen analysis cycle...
+2025-09-26 19:35:27,641 __main__ INFO Capturing screenshot...
+2025-09-26 19:35:27,906 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250926_193527.png
+2025-09-26 19:35:27,907 __main__ INFO Analyzing screen content...
+2025-09-26 19:35:27,963 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-26 19:35:28,483 _screen_analyzer_original INFO Found 20 text elements.
+2025-09-26 19:35:28,484 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-26 19:35:28,510 _screen_analyzer_original INFO Detected 301 potential buttons and 4 potential windows.
+2025-09-26 19:35:28,522 __main__ INFO Analysis report saved to: reports\screen_analysis_20250926_193528.json
+2025-09-26 19:35:28,522 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-26 19:35:28,523 _chatgpt_client_original INFO Sending request to OpenAI API...
+2025-09-26 19:35:35,318 _chatgpt_client_original INFO Successfully received response from API.
+2025-09-26 19:35:35,320 __main__ INFO Received response from ChatGPT.
+2025-09-26 19:35:35,321 _action_executor_original INFO Parsing ChatGPT response for actions...
+2025-09-26 19:35:35,321 _action_executor_original WARNING No valid actions found in the response.
+2025-09-26 19:35:49,829 __main__ INFO Exit key pressed. Shutting down...
+2025-09-26 19:36:24,054 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:36:24,054 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:36:24,055 _action_executor_original INFO ActionExecutor initialized with action delay 0.5s.
+2025-09-26 19:36:24,055 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:36:24,068 __main__ INFO Starting interactive mode.
+2025-09-26 19:36:24,068 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:36:24,068 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:40:33,362 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:40:33,362 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:40:33,362 __main__ CRITICAL A critical error occurred: float() argument must be a string or a real number, not 'Config'
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 114, in main
+    analyzer = DesktopAnalyzer()
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 37, in __init__
+    self.action_executor = ActionExecutor(self.config)
+                           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\action_executor.py", line 45, in __init__
+    self.action_delay = DEFAULT_ACTION_DELAY if action_delay is None else float(action_delay)
+                                                                          ~~~~~^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'Config'
+2025-09-26 19:41:46,591 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:41:46,591 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:41:46,591 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-26 19:41:46,592 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:41:46,592 __main__ INFO Starting interactive mode.
+2025-09-26 19:41:46,592 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:41:46,592 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:41:52,452 __main__ INFO Starting new screen analysis cycle...
+2025-09-26 19:41:52,452 __main__ INFO Capturing screenshot...
+2025-09-26 19:41:52,566 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250926_194152.png
+2025-09-26 19:41:52,566 __main__ INFO Analyzing screen content...
+2025-09-26 19:41:52,595 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-26 19:41:54,186 _screen_analyzer_original INFO Found 301 text elements.
+2025-09-26 19:41:54,186 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-26 19:41:54,211 _screen_analyzer_original INFO Detected 148 potential buttons and 1 potential windows.
+2025-09-26 19:41:54,225 __main__ INFO Analysis report saved to: reports\screen_analysis_20250926_194154.json
+2025-09-26 19:41:54,225 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-26 19:41:54,227 _chatgpt_client_original INFO Sending request to OpenAI API...
+2025-09-26 19:41:55,841 _chatgpt_client_original ERROR API request failed: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\ChatGPT Client.py", line 75, in _make_api_request
+    response.raise_for_status() # Raises an HTTPError for bad responses (4xx or 5xx)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-26 19:41:55,847 __main__ ERROR Failed to get a valid response from ChatGPT.
+2025-09-26 19:42:09,949 __main__ INFO Exit key pressed. Shutting down...
+2025-09-26 19:43:01,803 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:43:01,803 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:43:01,803 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-26 19:43:01,803 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:43:01,803 __main__ INFO Starting interactive mode.
+2025-09-26 19:43:01,804 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:43:01,804 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:43:07,873 __main__ INFO Starting new screen analysis cycle...
+2025-09-26 19:43:07,873 __main__ INFO Capturing screenshot...
+2025-09-26 19:43:08,090 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250926_194307.png
+2025-09-26 19:43:08,090 __main__ INFO Analyzing screen content...
+2025-09-26 19:43:08,142 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-26 19:43:10,250 _screen_analyzer_original INFO Found 282 text elements.
+2025-09-26 19:43:10,250 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-26 19:43:10,284 _screen_analyzer_original INFO Detected 302 potential buttons and 5 potential windows.
+2025-09-26 19:43:10,302 __main__ INFO Analysis report saved to: reports\screen_analysis_20250926_194310.json
+2025-09-26 19:43:10,303 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-26 19:43:10,306 _chatgpt_client_original INFO Sending request to OpenAI API...
+2025-09-26 19:43:13,020 _chatgpt_client_original ERROR API request failed: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\ChatGPT Client.py", line 75, in _make_api_request
+    response.raise_for_status() # Raises an HTTPError for bad responses (4xx or 5xx)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-26 19:43:13,028 __main__ ERROR Failed to get a valid response from ChatGPT.
+2025-09-26 19:47:59,286 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:47:59,287 _chatgpt_client_original INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-26 19:47:59,287 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-26 19:47:59,287 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:47:59,287 __main__ INFO Starting interactive mode.
+2025-09-26 19:47:59,287 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:47:59,287 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:48:10,098 __main__ INFO Starting new screen analysis cycle...
+2025-09-26 19:48:10,098 __main__ INFO Capturing screenshot...
+2025-09-26 19:48:10,306 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250926_194810.png
+2025-09-26 19:48:10,307 __main__ INFO Analyzing screen content...
+2025-09-26 19:48:10,358 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-26 19:48:11,825 _screen_analyzer_original INFO Found 152 text elements.
+2025-09-26 19:48:11,826 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-26 19:48:11,856 _screen_analyzer_original INFO Detected 359 potential buttons and 3 potential windows.
+2025-09-26 19:48:11,871 __main__ INFO Analysis report saved to: reports\screen_analysis_20250926_194811.json
+2025-09-26 19:48:11,871 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-26 19:48:11,874 _chatgpt_client_original INFO Sending request to OpenAI API...
+2025-09-26 19:48:14,753 _chatgpt_client_original ERROR API request failed: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\ChatGPT Client.py", line 75, in _make_api_request
+    response.raise_for_status() # Raises an HTTPError for bad responses (4xx or 5xx)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-26 19:48:14,759 __main__ ERROR Failed to get a valid response from ChatGPT.
+2025-09-26 19:52:01,851 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-26 19:52:01,852 chatgpt_client INFO ChatGPTClient initialized for model: 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
+2025-09-26 19:52:01,852 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-26 19:52:01,852 __main__ INFO Desktop Analyzer initialized.
+2025-09-26 19:52:01,852 __main__ INFO Starting interactive mode.
+2025-09-26 19:52:01,852 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-26 19:52:01,853 __main__ INFO Press 'ESC' to exit.
+2025-09-26 19:52:15,856 __main__ INFO Starting new screen analysis cycle...
+2025-09-26 19:52:15,856 __main__ INFO Capturing screenshot...
+2025-09-26 19:52:16,063 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250926_195215.png
+2025-09-26 19:52:16,064 __main__ INFO Analyzing screen content...
+2025-09-26 19:52:16,115 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-26 19:52:17,519 _screen_analyzer_original INFO Found 161 text elements.
+2025-09-26 19:52:17,519 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-26 19:52:17,548 _screen_analyzer_original INFO Detected 361 potential buttons and 4 potential windows.
+2025-09-26 19:52:17,563 __main__ INFO Analysis report saved to: reports\screen_analysis_20250926_195217.json
+2025-09-26 19:52:17,563 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-26 19:52:17,566 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-26 19:52:20,526 chatgpt_client ERROR API request failed with HTTP error: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 74, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+2025-09-26 19:52:20,527 __main__ ERROR An error occurred during the analysis cycle: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 124, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 114, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 74, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+2025-09-27 16:51:22,473 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 16:51:22,475 chatgpt_client INFO ChatGPTClient initialized for model: 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
+2025-09-27 16:51:22,476 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 16:51:22,476 __main__ INFO Desktop Analyzer initialized.
+2025-09-27 16:51:22,478 __main__ INFO Starting interactive mode.
+2025-09-27 16:51:22,482 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-27 16:51:22,482 __main__ INFO Press 'ESC' to exit.
+2025-09-27 16:51:25,099 __main__ INFO Starting new screen analysis cycle...
+2025-09-27 16:51:25,099 __main__ INFO Capturing screenshot...
+2025-09-27 16:51:25,304 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_165125.png
+2025-09-27 16:51:25,305 __main__ INFO Analyzing screen content...
+2025-09-27 16:51:25,362 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 16:51:30,012 _screen_analyzer_original INFO Found 476 text elements.
+2025-09-27 16:51:30,013 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 16:51:30,044 _screen_analyzer_original INFO Detected 230 potential buttons and 2 potential windows.
+2025-09-27 16:51:30,066 __main__ INFO Analysis report saved to: reports\screen_analysis_20250927_165130.json
+2025-09-27 16:51:30,066 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 16:51:30,069 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 16:51:32,296 chatgpt_client ERROR API request failed with HTTP error: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 74, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+2025-09-27 16:51:32,314 __main__ ERROR An error occurred during the analysis cycle: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 124, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 114, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 74, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.openai.com/v1/chat/completions
+2025-09-27 16:53:10,684 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 16:53:10,684 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 16:53:10,685 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 16:53:10,685 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 16:53:10,685 __main__ INFO Desktop Analyzer initialized.
+2025-09-27 16:53:10,685 __main__ INFO Starting interactive mode.
+2025-09-27 16:53:10,686 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-27 16:53:10,686 __main__ INFO Press 'ESC' to exit.
+2025-09-27 16:53:13,116 __main__ INFO Starting new screen analysis cycle...
+2025-09-27 16:53:13,116 __main__ INFO Capturing screenshot...
+2025-09-27 16:53:13,233 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_165313.png
+2025-09-27 16:53:13,234 __main__ INFO Analyzing screen content...
+2025-09-27 16:53:13,266 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 16:53:15,645 _screen_analyzer_original INFO Found 454 text elements.
+2025-09-27 16:53:15,645 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 16:53:15,664 _screen_analyzer_original INFO Detected 82 potential buttons and 1 potential windows.
+2025-09-27 16:53:15,680 __main__ INFO Analysis report saved to: reports\screen_analysis_20250927_165315.json
+2025-09-27 16:53:15,680 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 16:53:15,682 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 16:53:50,692 __main__ INFO Received response from ChatGPT.
+2025-09-27 16:53:50,694 __main__ ERROR An error occurred during the analysis cycle: 'ActionExecutor' object has no attribute 'execute_from_response'
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 67, in run_analysis_cycle
+    self.action_executor.execute_from_response(chatgpt_response)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ActionExecutor' object has no attribute 'execute_from_response'. Did you mean: 'run_from_response'?
+2025-09-27 16:56:11,677 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 16:56:11,678 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 16:56:11,678 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 16:56:11,678 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 16:56:11,678 __main__ INFO Desktop Analyzer initialized.
+2025-09-27 16:56:11,678 __main__ INFO Starting interactive mode.
+2025-09-27 16:56:11,679 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-27 16:56:11,679 __main__ INFO Press 'ESC' to exit.
+2025-09-27 16:56:21,290 __main__ INFO Starting new screen analysis cycle...
+2025-09-27 16:56:21,291 __main__ INFO Capturing screenshot...
+2025-09-27 16:56:21,397 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_165621.png
+2025-09-27 16:56:21,398 __main__ INFO Analyzing screen content...
+2025-09-27 16:56:21,430 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 16:56:23,186 _screen_analyzer_original INFO Found 285 text elements.
+2025-09-27 16:56:23,187 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 16:56:23,205 _screen_analyzer_original INFO Detected 54 potential buttons and 1 potential windows.
+2025-09-27 16:56:23,216 __main__ INFO Analysis report saved to: reports\screen_analysis_20250927_165623.json
+2025-09-27 16:56:23,216 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 16:56:23,218 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 16:56:43,754 __main__ INFO Received response from ChatGPT.
+2025-09-27 16:56:43,757 action_executor INFO Parsed 54 actions from response.
+2025-09-27 16:56:43,757 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-09-27 16:56:48,842 action_executor INFO Confirmation key pressed — proceeding with execution.
+2025-09-27 16:56:49,042 action_executor INFO Executing 54 actions...
+2025-09-27 16:56:49,043 action_executor INFO Action 1: clicking at (71, 1066)
+2025-09-27 16:56:50,548 action_executor INFO Action 2: clicking at (918, 1059)
+2025-09-27 16:56:52,088 action_executor INFO Action 3: clicking at (776, 1056)
+2025-09-27 16:56:53,592 action_executor INFO Action 4: clicking at (1227, 1056)
+2025-09-27 16:56:55,099 action_executor INFO Action 5: clicking at (1139, 1056)
+2025-09-27 16:56:56,610 action_executor INFO Action 6: clicking at (1095, 1056)
+2025-09-27 16:56:58,129 action_executor INFO Action 7: clicking at (694, 1056)
+2025-09-27 16:56:59,649 action_executor INFO Action 8: clicking at (1183, 1055)
+2025-09-27 16:57:01,167 action_executor INFO Action 9: clicking at (1051, 1055)
+2025-09-27 16:57:02,672 action_executor INFO Action 10: clicking at (31, 1053)
+2025-09-27 16:57:04,188 action_executor INFO Action 11: clicking at (24, 986)
+2025-09-27 16:57:05,706 action_executor INFO Action 12: clicking at (24, 938)
+2025-09-27 16:57:07,208 action_executor INFO Action 13: clicking at (1807, 824)
+2025-09-27 16:57:08,712 action_executor INFO Action 14: clicking at (1775, 821)
+2025-09-27 16:57:10,225 action_executor INFO Action 15: clicking at (1672, 802)
+2025-09-27 16:57:11,744 action_executor INFO Action 16: clicking at (1781, 802)
+2025-09-27 16:57:13,246 action_executor INFO Action 17: clicking at (1742, 802)
+2025-09-27 16:57:14,748 action_executor INFO Action 18: clicking at (1732, 783)
+2025-09-27 16:57:16,250 action_executor INFO Action 19: clicking at (1773, 766)
+2025-09-27 16:57:17,752 action_executor INFO Action 20: clicking at (1747, 766)
+2025-09-27 16:57:19,268 action_executor INFO Action 21: clicking at (1874, 763)
+2025-09-27 16:57:20,770 action_executor INFO Action 22: clicking at (1818, 763)
+2025-09-27 16:57:22,273 action_executor INFO Action 23: clicking at (1715, 743)
+2025-09-27 16:57:23,776 action_executor INFO Action 24: clicking at (1673, 743)
+2025-09-27 16:57:25,278 action_executor INFO Action 25: clicking at (1883, 743)
+2025-09-27 16:57:26,792 action_executor INFO Action 26: clicking at (1694, 709)
+2025-09-27 16:57:28,294 action_executor INFO Action 27: clicking at (1664, 709)
+2025-09-27 16:57:29,811 action_executor INFO Action 28: clicking at (1787, 613)
+2025-09-27 16:57:31,313 action_executor INFO Action 29: clicking at (1748, 612)
+2025-09-27 16:57:32,815 action_executor INFO Action 30: clicking at (1870, 577)
+2025-09-27 16:57:34,317 action_executor INFO Action 31: clicking at (1718, 577)
+2025-09-27 16:57:35,820 action_executor INFO Action 32: clicking at (1779, 574)
+2025-09-27 16:57:37,321 action_executor INFO Action 33: clicking at (1847, 557)
+2025-09-27 16:57:38,823 action_executor INFO Action 34: clicking at (1811, 556)
+2025-09-27 16:57:40,326 action_executor INFO Action 35: clicking at (1717, 554)
+2025-09-27 16:57:41,829 action_executor INFO Action 36: clicking at (1675, 554)
+2025-09-27 16:57:43,331 action_executor INFO Action 37: clicking at (1737, 422)
+2025-09-27 16:57:44,833 action_executor INFO Action 38: clicking at (1824, 422)
+2025-09-27 16:57:46,336 action_executor INFO Action 39: clicking at (1763, 420)
+2025-09-27 16:57:47,838 action_executor INFO Action 40: clicking at (1866, 333)
+2025-09-27 16:57:49,340 action_executor INFO Action 41: clicking at (1840, 287)
+2025-09-27 16:57:50,842 action_executor INFO Action 42: clicking at (24, 251)
+2025-09-27 16:57:52,344 action_executor INFO Action 43: clicking at (24, 203)
+2025-09-27 16:57:53,846 action_executor INFO Action 44: clicking at (1684, 195)
+2025-09-27 16:57:55,348 action_executor INFO Action 45: clicking at (1712, 176)
+2025-09-27 16:57:56,850 action_executor INFO Action 46: clicking at (1759, 173)
+2025-09-27 16:57:58,352 action_executor INFO Action 47: clicking at (24, 107)
+2025-09-27 16:57:59,854 action_executor INFO Action 48: clicking at (1746, 86)
+2025-09-27 16:58:01,356 action_executor INFO Action 49: clicking at (1713, 88)
+2025-09-27 16:58:02,858 action_executor INFO Action 50: clicking at (23, 59)
+2025-09-27 16:58:04,360 action_executor INFO Action 51: clicking at (377, 19)
+2025-09-27 16:58:05,862 action_executor INFO Action 52: clicking at (271, 17)
+2025-09-27 16:58:07,365 action_executor INFO Action 53: clicking at (89, 17)
+2025-09-27 16:58:08,884 action_executor INFO Action 54: clicking at (198, 17)
+2025-09-27 16:58:10,386 action_executor INFO Execution finished.
+2025-09-27 17:01:05,668 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:01:05,669 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:01:05,669 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:01:05,669 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:01:05,669 __main__ INFO Desktop Analyzer initialized.
+2025-09-27 17:01:05,669 __main__ INFO Starting interactive mode.
+2025-09-27 17:01:05,670 __main__ INFO Press 'F9' to trigger a screen analysis cycle.
+2025-09-27 17:01:05,670 __main__ INFO Press 'ESC' to exit.
+2025-09-27 17:01:08,207 __main__ INFO Starting new screen analysis cycle...
+2025-09-27 17:01:08,208 __main__ INFO Capturing screenshot...
+2025-09-27 17:01:08,332 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_170108.png
+2025-09-27 17:01:08,333 __main__ INFO Analyzing screen content...
+2025-09-27 17:01:08,367 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:01:10,323 _screen_analyzer_original INFO Found 406 text elements.
+2025-09-27 17:01:10,323 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:01:10,343 _screen_analyzer_original INFO Detected 75 potential buttons and 1 potential windows.
+2025-09-27 17:01:10,357 __main__ INFO Analysis report saved to: reports\screen_analysis_20250927_170110.json
+2025-09-27 17:01:10,357 __main__ INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:01:10,359 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:01:43,583 __main__ INFO Received response from ChatGPT.
+2025-09-27 17:01:43,587 action_executor INFO Parsed 75 actions from response.
+2025-09-27 17:01:43,588 action_executor INFO Selected 1 action(s) to execute based on proximity to center.
+2025-09-27 17:01:43,588 action_executor INFO Selected action 1: {'type': 'click', 'x': 918, 'y': 1059}
+2025-09-27 17:01:43,589 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-09-27 17:01:54,772 action_executor INFO Confirmation key pressed — proceeding with execution.
+2025-09-27 17:01:54,974 action_executor INFO Executing 1 actions...
+2025-09-27 17:01:54,974 action_executor INFO Action 1: clicking at (918, 1059)
+2025-09-27 17:01:56,479 action_executor INFO Execution finished.
+2025-09-27 17:04:11,835 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:04:11,835 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:04:11,836 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:04:11,836 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:04:11,836 _main_app INFO Desktop Analyzer initialized.
+2025-09-27 17:04:14,190 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:04:14,190 _main_app INFO Capturing screenshot...
+2025-09-27 17:04:14,318 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_170414.png
+2025-09-27 17:04:14,319 _main_app INFO Analyzing screen content...
+2025-09-27 17:04:14,353 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:04:16,531 _screen_analyzer_original INFO Found 420 text elements.
+2025-09-27 17:04:16,531 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:04:16,560 _screen_analyzer_original INFO Detected 197 potential buttons and 1 potential windows.
+2025-09-27 17:04:16,577 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_170416.json
+2025-09-27 17:04:16,577 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:04:16,580 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:04:17,237 chatgpt_client WARNING API returned 429. Retry 1/5 after 1.05s
+2025-09-27 17:04:19,551 chatgpt_client WARNING API returned 429. Retry 2/5 after 2.28s
+2025-09-27 17:04:22,001 chatgpt_client WARNING API returned 429. Retry 3/5 after 4.46s
+2025-09-27 17:04:27,262 chatgpt_client WARNING API returned 429. Retry 4/5 after 8.19s
+2025-09-27 17:04:35,673 chatgpt_client WARNING API returned 429. Retry 5/5 after 16.25s
+2025-09-27 17:04:53,192 chatgpt_client ERROR API request failed with HTTP error: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-27 17:04:53,196 _main_app ERROR An error occurred during the analysis cycle: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 133, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 123, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-27 17:05:10,140 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:05:10,140 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:05:10,140 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:05:10,140 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:05:10,141 _main_app INFO Desktop Analyzer initialized.
+2025-09-27 17:05:15,997 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:05:15,998 _main_app INFO Capturing screenshot...
+2025-09-27 17:05:16,117 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_170515.png
+2025-09-27 17:05:16,118 _main_app INFO Analyzing screen content...
+2025-09-27 17:05:16,151 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:05:18,267 _screen_analyzer_original INFO Found 402 text elements.
+2025-09-27 17:05:18,267 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:05:18,285 _screen_analyzer_original INFO Detected 62 potential buttons and 1 potential windows.
+2025-09-27 17:05:18,298 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_170518.json
+2025-09-27 17:05:18,299 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:05:18,301 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:06:18,787 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.26s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:07:24,458 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:07:24,459 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:07:24,459 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:07:24,459 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:07:24,459 _main_app INFO Desktop Analyzer initialized.
+2025-09-27 17:07:27,764 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:07:27,765 _main_app INFO Capturing screenshot...
+2025-09-27 17:07:27,887 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_170727.png
+2025-09-27 17:07:27,888 _main_app INFO Analyzing screen content...
+2025-09-27 17:07:27,920 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:07:29,919 _screen_analyzer_original INFO Found 374 text elements.
+2025-09-27 17:07:29,919 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:07:29,938 _screen_analyzer_original INFO Detected 62 potential buttons and 1 potential windows.
+2025-09-27 17:07:29,951 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_170729.json
+2025-09-27 17:07:29,951 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:07:29,953 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:07:54,564 _main_app INFO Received response from ChatGPT.
+2025-09-27 17:07:54,568 action_executor INFO Parsed 62 actions from response.
+2025-09-27 17:07:54,568 action_executor INFO Selected 1 action(s) to execute based on proximity to center.
+2025-09-27 17:07:54,569 action_executor INFO Selected action 1: {'type': 'click', 'x': 918, 'y': 1059}
+2025-09-27 17:07:54,569 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-09-27 17:08:02,450 action_executor INFO Confirmation key pressed — proceeding with execution.
+2025-09-27 17:08:02,652 action_executor INFO Executing 1 actions...
+2025-09-27 17:08:02,652 action_executor INFO Action 1: clicking at (918, 1059)
+2025-09-27 17:08:04,157 action_executor INFO Execution finished.
+2025-09-27 17:08:07,676 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:08:07,677 _main_app INFO Capturing screenshot...
+2025-09-27 17:08:07,842 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_170807.png
+2025-09-27 17:08:07,843 _main_app INFO Analyzing screen content...
+2025-09-27 17:08:07,885 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:08:10,227 _screen_analyzer_original INFO Found 478 text elements.
+2025-09-27 17:08:10,227 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:08:10,261 _screen_analyzer_original INFO Detected 242 potential buttons and 5 potential windows.
+2025-09-27 17:08:10,284 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_170810.json
+2025-09-27 17:08:10,284 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:08:10,288 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:08:10,556 chatgpt_client WARNING API returned 429. Retry 1/5 after 1.45s
+2025-09-27 17:08:12,838 chatgpt_client WARNING API returned 429. Retry 2/5 after 2.08s
+2025-09-27 17:08:15,806 chatgpt_client WARNING API returned 429. Retry 3/5 after 4.23s
+2025-09-27 17:08:20,266 chatgpt_client WARNING API returned 429. Retry 4/5 after 8.22s
+2025-09-27 17:08:28,778 chatgpt_client WARNING API returned 429. Retry 5/5 after 16.33s
+2025-09-27 17:08:45,390 chatgpt_client ERROR API request failed with HTTP error: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-27 17:08:45,394 _main_app ERROR An error occurred during the analysis cycle: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 133, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 123, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-09-27 17:35:20,983 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:35:20,984 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:35:20,984 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:35:20,984 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:35:20,984 _main_app INFO Desktop Analyzer initialized.
+2025-09-27 17:35:24,714 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:35:24,714 _main_app INFO Capturing screenshot...
+2025-09-27 17:35:24,830 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_173524.png
+2025-09-27 17:35:24,831 _main_app INFO Analyzing screen content...
+2025-09-27 17:35:24,864 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:35:26,473 _screen_analyzer_original INFO Found 299 text elements.
+2025-09-27 17:35:26,473 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:35:26,489 _screen_analyzer_original INFO Detected 48 potential buttons and 2 potential windows.
+2025-09-27 17:35:26,500 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_173526.json
+2025-09-27 17:35:26,500 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:35:26,502 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:36:26,961 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.09s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:45:21,146 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-09-27 17:45:21,146 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-09-27 17:45:21,147 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-09-27 17:45:21,147 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-09-27 17:45:21,147 _main_app INFO Desktop Analyzer initialized.
+2025-09-27 17:45:23,726 _main_app INFO Starting new screen analysis cycle...
+2025-09-27 17:45:23,727 _main_app INFO Capturing screenshot...
+2025-09-27 17:45:23,916 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20250927_174523.png
+2025-09-27 17:45:23,917 _main_app INFO Analyzing screen content...
+2025-09-27 17:45:23,963 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-09-27 17:45:25,738 _screen_analyzer_original INFO Found 171 text elements.
+2025-09-27 17:45:25,738 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-09-27 17:45:25,769 _screen_analyzer_original INFO Detected 238 potential buttons and 3 potential windows.
+2025-09-27 17:45:25,782 _main_app INFO Analysis report saved to: reports\screen_analysis_20250927_174525.json
+2025-09-27 17:45:25,783 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-09-27 17:45:25,785 chatgpt_client INFO Sending request to OpenAI API...
+2025-09-27 17:46:26,272 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.10s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:47:27,852 chatgpt_client WARNING Network error on API request. Retry 2/5 after 2.25s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:48:30,606 chatgpt_client WARNING Network error on API request. Retry 3/5 after 4.30s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:49:35,383 chatgpt_client WARNING Network error on API request. Retry 4/5 after 8.42s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:50:44,340 chatgpt_client WARNING Network error on API request. Retry 5/5 after 16.09s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:52:00,924 chatgpt_client ERROR API request failed permanently: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 82, in _make_api_request
+    resp = self.session.post(OPENAI_API_URL, headers=headers, json=payload, timeout=60)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-09-27 17:52:01,161 _main_app ERROR An error occurred during the analysis cycle: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 133, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 123, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 82, in _make_api_request
+    resp = self.session.post(OPENAI_API_URL, headers=headers, json=payload, timeout=60)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:50:03,924 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-10-02 13:50:03,925 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-10-02 13:50:03,925 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-10-02 13:50:03,925 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-10-02 13:50:03,925 _main_app INFO Desktop Analyzer initialized.
+2025-10-02 13:50:10,256 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 13:50:10,256 _main_app INFO Capturing screenshot...
+2025-10-02 13:50:10,639 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20251002_135010.png
+2025-10-02 13:50:10,648 _main_app INFO Analyzing screen content...
+2025-10-02 13:50:10,727 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-10-02 13:50:13,413 _screen_analyzer_original INFO Found 255 text elements.
+2025-10-02 13:50:13,413 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-10-02 13:50:13,438 _screen_analyzer_original INFO Detected 183 potential buttons and 2 potential windows.
+2025-10-02 13:50:13,452 _main_app INFO Analysis report saved to: reports\screen_analysis_20251002_135013.json
+2025-10-02 13:50:13,452 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-10-02 13:50:13,454 chatgpt_client INFO Sending request to OpenAI API...
+2025-10-02 13:51:13,957 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.39s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:52:15,802 chatgpt_client WARNING Network error on API request. Retry 2/5 after 2.45s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:53:18,706 chatgpt_client WARNING Network error on API request. Retry 3/5 after 4.06s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:54:23,233 chatgpt_client WARNING Network error on API request. Retry 4/5 after 8.34s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:55:32,036 chatgpt_client WARNING Network error on API request. Retry 5/5 after 16.34s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:56:48,854 chatgpt_client ERROR API request failed permanently: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 82, in _make_api_request
+    resp = self.session.post(OPENAI_API_URL, headers=headers, json=payload, timeout=60)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 13:56:48,995 _main_app ERROR An error occurred during the analysis cycle: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 133, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 123, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 82, in _make_api_request
+    resp = self.session.post(OPENAI_API_URL, headers=headers, json=payload, timeout=60)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 15:15:27,160 __main__ CRITICAL A critical error occurred: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 114, in main
+    analyzer = DesktopAnalyzer()
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 35, in __init__
+    self.screen_analyzer = ScreenAnalyzer(self.config)
+                           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  [Previous line repeated 994 more times]
+RecursionError: maximum recursion depth exceeded
+2025-10-02 15:15:29,377 __main__ CRITICAL A critical error occurred: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 114, in main
+    analyzer = DesktopAnalyzer()
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 35, in __init__
+    self.screen_analyzer = ScreenAnalyzer(self.config)
+                           ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\screen_analyzer.py", line 51, in __init__
+    self._orig = ScreenAnalyzer(*args, **kwargs)
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  [Previous line repeated 994 more times]
+RecursionError: maximum recursion depth exceeded
+2025-10-02 15:21:44,044 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-10-02 15:21:44,044 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-10-02 15:21:44,044 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-10-02 15:21:44,044 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-10-02 15:21:44,045 _main_app INFO Desktop Analyzer initialized.
+2025-10-02 15:22:09,574 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:22:09,574 _main_app INFO Capturing screenshot...
+2025-10-02 15:22:09,575 _main_app ERROR An error occurred during the analysis cycle: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 47, in run_analysis_cycle
+    screenshot_path = self.screen_analyzer.capture_screenshot()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'. Did you mean: 'analyze_screenshot'?
+2025-10-02 15:22:13,709 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:22:13,709 _main_app INFO Capturing screenshot...
+2025-10-02 15:22:13,709 _main_app ERROR An error occurred during the analysis cycle: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 47, in run_analysis_cycle
+    screenshot_path = self.screen_analyzer.capture_screenshot()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'. Did you mean: 'analyze_screenshot'?
+2025-10-02 15:22:53,105 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-10-02 15:22:53,105 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-10-02 15:22:53,106 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-10-02 15:22:53,106 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-10-02 15:22:53,106 _main_app INFO Desktop Analyzer initialized.
+2025-10-02 15:22:55,142 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:22:55,142 _main_app INFO Capturing screenshot...
+2025-10-02 15:22:55,142 _main_app ERROR An error occurred during the analysis cycle: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 47, in run_analysis_cycle
+    screenshot_path = self.screen_analyzer.capture_screenshot()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_WrappedScreenAnalyzer' object has no attribute 'capture_screenshot'. Did you mean: 'analyze_screenshot'?
+2025-10-02 15:25:29,805 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-10-02 15:25:29,806 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-10-02 15:25:29,806 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-10-02 15:25:29,806 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-10-02 15:25:29,806 _main_app INFO Desktop Analyzer initialized.
+2025-10-02 15:25:33,292 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:25:33,293 _main_app INFO Capturing screenshot...
+2025-10-02 15:25:33,426 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20251002_152533.png
+2025-10-02 15:25:33,427 _main_app INFO Analyzing screen content...
+2025-10-02 15:25:33,462 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-10-02 15:25:35,779 _screen_analyzer_original INFO Found 459 text elements.
+2025-10-02 15:25:35,779 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-10-02 15:25:35,802 _screen_analyzer_original INFO Detected 109 potential buttons and 1 potential windows.
+2025-10-02 15:25:35,820 _main_app INFO Analysis report saved to: reports\screen_analysis_20251002_152535.json
+2025-10-02 15:25:35,820 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-10-02 15:25:35,822 chatgpt_client INFO Sending request to OpenAI API...
+2025-10-02 15:26:23,158 _main_app INFO Received response from ChatGPT.
+2025-10-02 15:26:23,163 action_executor INFO Parsed 95 actions from response.
+2025-10-02 15:26:23,163 action_executor INFO Execution mode chosen: type
+2025-10-02 15:26:23,202 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-10-02 15:26:53,302 action_executor INFO Confirmation key pressed — proceeding with execution.
+2025-10-02 15:26:53,503 action_executor INFO Executing 1 actions...
+2025-10-02 15:26:53,511 action_executor INFO Action 1: typing text: text
+2025-10-02 15:26:54,721 action_executor INFO Execution finished.
+2025-10-02 15:27:32,132 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:27:32,132 _main_app INFO Capturing screenshot...
+2025-10-02 15:27:32,242 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20251002_152732.png
+2025-10-02 15:27:32,243 _main_app INFO Analyzing screen content...
+2025-10-02 15:27:32,277 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-10-02 15:27:34,604 _screen_analyzer_original INFO Found 469 text elements.
+2025-10-02 15:27:34,605 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-10-02 15:27:34,627 _screen_analyzer_original INFO Detected 109 potential buttons and 1 potential windows.
+2025-10-02 15:27:34,645 _main_app INFO Analysis report saved to: reports\screen_analysis_20251002_152734.json
+2025-10-02 15:27:34,646 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-10-02 15:27:34,648 chatgpt_client INFO Sending request to OpenAI API...
+2025-10-02 15:28:34,651 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.04s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 15:29:36,408 chatgpt_client WARNING Network error on API request. Retry 2/5 after 2.32s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 15:30:39,433 chatgpt_client WARNING Network error on API request. Retry 3/5 after 4.33s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-10-02 15:38:35,186 _screen_analyzer_original INFO Screen dimensions detected: 1920x1080
+2025-10-02 15:38:35,186 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-10-02 15:38:35,187 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-10-02 15:38:35,187 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-10-02 15:38:35,187 _main_app INFO Desktop Analyzer initialized.
+2025-10-02 15:38:38,415 _main_app INFO Starting new screen analysis cycle...
+2025-10-02 15:38:38,416 _main_app INFO Capturing screenshot...
+2025-10-02 15:38:38,547 _screen_analyzer_original INFO Screenshot saved to: screenshots\screenshot_20251002_153838.png
+2025-10-02 15:38:38,548 _main_app INFO Analyzing screen content...
+2025-10-02 15:38:38,583 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-10-02 15:38:40,885 _screen_analyzer_original INFO Found 462 text elements.
+2025-10-02 15:38:40,885 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-10-02 15:38:40,916 _screen_analyzer_original INFO Detected 195 potential buttons and 1 potential windows.
+2025-10-02 15:38:40,934 _main_app INFO Analysis report saved to: reports\screen_analysis_20251002_153840.json
+2025-10-02 15:38:40,935 _main_app INFO Sending analysis to ChatGPT for action generation...
+2025-10-02 15:38:40,937 chatgpt_client INFO Sending request to OpenAI API...
+2025-10-02 15:38:42,171 chatgpt_client WARNING API returned 429. Retry 1/5 after 1.29s
+2025-10-02 15:38:44,275 chatgpt_client WARNING API returned 429. Retry 2/5 after 2.41s
+2025-10-02 15:38:47,784 chatgpt_client WARNING API returned 429. Retry 3/5 after 4.33s
+2025-10-02 15:38:54,314 chatgpt_client WARNING API returned 429. Retry 4/5 after 8.39s
+2025-10-02 15:39:03,163 chatgpt_client WARNING API returned 429. Retry 5/5 after 16.45s
+2025-10-02 15:39:21,115 chatgpt_client ERROR API request failed with HTTP error: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-10-02 15:39:21,149 _main_app ERROR An error occurred during the analysis cycle: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "C:\Users\Brody Burrell\Desktop\py\Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 133, in send_analysis
+    return self.get_actions_from_report(report)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 123, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "C:\Users\Brody Burrell\Desktop\py\chatgpt_client.py", line 83, in _make_api_request
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions

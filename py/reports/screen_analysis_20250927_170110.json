@@ -1,0 +1,9017 @@
+{
+  "timestamp": 1759006870.344388,
+  "screen_dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "elements": {
+    "text": [
+      {
+        "type": "text",
+        "text": "44",
+        "coordinates": {
+          "x": 375,
+          "y": 97,
+          "width": 15,
+          "height": 9
+        },
+        "confidence": 66
+      },
+      {
+        "type": "text",
+        "text": "class",
+        "coordinates": {
+          "x": 417,
+          "y": 99,
+          "width": 36,
+          "height": 7
+        },
+        "confidence": 55
+      },
+      {
+        "type": "text",
+        "text": "ActionExecutor:",
+        "coordinates": {
+          "x": 463,
+          "y": 96,
+          "width": 112,
+          "height": 21
+        },
+        "confidence": 84
+      },
+      {
+        "type": "text",
+        "text": "‘Selection",
+        "coordinates": {
+          "x": 1645,
+          "y": 102,
+          "width": 68,
+          "height": 10
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "heuristic:",
+        "coordinates": {
+          "x": 1718,
+          "y": 102,
+          "width": 47,
+          "height": 10
+        },
+        "confidence": 72
+      },
+      {
+        "type": "text",
+        "text": "actions",
+        "coordinates": {
+          "x": 1772,
+          "y": 102,
+          "width": 103,
+          "height": 10
+        },
+        "confidence": 72
+      },
+      {
+        "type": "text",
+        "text": "are",
+        "coordinates": {
+          "x": 1816,
+          "y": 92,
+          "width": 18,
+          "height": 30
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "scored",
+        "coordinates": {
+          "x": 1838,
+          "y": 102,
+          "width": 36,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "by",
+        "coordinates": {
+          "x": 1880,
+          "y": 102,
+          "width": 13,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "cm",
+        "coordinates": {
+          "x": 75,
+          "y": 126,
+          "width": 17,
+          "height": 10
+        },
+        "confidence": 51
+      },
+      {
+        "type": "text",
+        "text": "Python",
+        "coordinates": {
+          "x": 121,
+          "y": 121,
+          "width": 42,
+          "height": 13
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "def_execute_actions(self,",
+        "coordinates": {
+          "x": 448,
+          "y": 115,
+          "width": 189,
+          "height": 13
+        },
+        "confidence": 67
+      },
+      {
+        "type": "text",
+        "text": "actions:",
+        "coordinates": {
+          "x": 648,
+          "y": 116,
+          "width": 58,
+          "height": 9
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "List[Dict{str,",
+        "coordinates": {
+          "x": 718,
+          "y": 115,
+          "width": 104,
+          "height": 19
+        },
+        "confidence": 46
+      },
+      {
+        "type": "text",
+        "text": "Any]])",
+        "coordinates": {
+          "x": 832,
+          "y": 115,
+          "width": 44,
+          "height": 13
+        },
+        "confidence": 58
+      },
+      {
+        "type": "text",
+        "text": "None:",
+        "coordinates": {
+          "x": 910,
+          "y": 116,
+          "width": 35,
+          "height": 9
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "ti,",
+        "coordinates": {
+          "x": 1494,
+          "y": 105,
+          "width": 20,
+          "height": 33
+        },
+        "confidence": 55
+      },
+      {
+        "type": "text",
+        "text": "Manhattan",
+        "coordinates": {
+          "x": 1662,
+          "y": 105,
+          "width": 60,
+          "height": 33
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "distance",
+        "coordinates": {
+          "x": 1727,
+          "y": 105,
+          "width": 47,
+          "height": 33
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1779,
+          "y": 123,
+          "width": 9,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1793,
+          "y": 122,
+          "width": 17,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "screen",
+        "coordinates": {
+          "x": 1817,
+          "y": 105,
+          "width": 34,
+          "height": 33
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "centers",
+        "coordinates": {
+          "x": 1857,
+          "y": 123,
+          "width": 38,
+          "height": 11
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "Qo",
+        "coordinates": {
+          "x": 11,
+          "y": 133,
+          "width": 22,
+          "height": 38
+        },
+        "confidence": 51
+      },
+      {
+        "type": "text",
+        "text": "(2",
+        "coordinates": {
+          "x": 60,
+          "y": 133,
+          "width": 46,
+          "height": 39
+        },
+        "confidence": 39
+      },
+      {
+        "type": "text",
+        "text": "Python",
+        "coordinates": {
+          "x": 121,
+          "y": 140,
+          "width": 39,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "language",
+        "coordinates": {
+          "x": 165,
+          "y": 133,
+          "width": 48,
+          "height": 24
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "support",
+        "coordinates": {
+          "x": 221,
+          "y": 133,
+          "width": 42,
+          "height": 24
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "with",
+        "coordinates": {
+          "x": 269,
+          "y": 133,
+          "width": 22,
+          "height": 24
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "exte...",
+        "coordinates": {
+          "x": 297,
+          "y": 133,
+          "width": 33,
+          "height": 24
+        },
+        "confidence": 83
+      },
+      {
+        "type": "text",
+        "text": "172",
+        "coordinates": {
+          "x": 368,
+          "y": 141,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "else:",
+        "coordinates": {
+          "x": 540,
+          "y": 140,
+          "width": 35,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "——",
+        "coordinates": {
+          "x": 1498,
+          "y": 140,
+          "width": 30,
+          "height": 15
+        },
+        "confidence": 46
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1661,
+          "y": 141,
+          "width": 16,
+          "height": 10
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "closest",
+        "coordinates": {
+          "x": 1683,
+          "y": 141,
+          "width": 96,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "N",
+        "coordinates": {
+          "x": 1727,
+          "y": 134,
+          "width": 6,
+          "height": 24
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "actions",
+        "coordinates": {
+          "x": 1739,
+          "y": 141,
+          "width": 38,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "are",
+        "coordinates": {
+          "x": 1784,
+          "y": 134,
+          "width": 15,
+          "height": 24
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "selected.",
+        "coordinates": {
+          "x": 1805,
+          "y": 141,
+          "width": 49,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "@",
+        "coordinates": {
+          "x": 122,
+          "y": 159,
+          "width": 9,
+          "height": 12
+        },
+        "confidence": 56
+      },
+      {
+        "type": "text",
+        "text": "Microsoft",
+        "coordinates": {
+          "x": 138,
+          "y": 152,
+          "width": 50,
+          "height": 25
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "173",
+        "coordinates": {
+          "x": 368,
+          "y": 160,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "|",
+        "coordinates": {
+          "x": 539,
+          "y": 155,
+          "width": 1,
+          "height": 19
+        },
+        "confidence": 70
+      },
+      {
+        "type": "text",
+        "text": "LoG.warning(\"Unknown",
+        "coordinates": {
+          "x": 572,
+          "y": 159,
+          "width": 151,
+          "height": 13
+        },
+        "confidence": 78
+      },
+      {
+        "type": "text",
+        "text": "action",
+        "coordinates": {
+          "x": 733,
+          "y": 159,
+          "width": 44,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "type:",
+        "coordinates": {
+          "x": 786,
+          "y": 160,
+          "width": 35,
+          "height": 12
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "%s\",",
+        "coordinates": {
+          "x": 832,
+          "y": 159,
+          "width": 28,
+          "height": 12
+        },
+        "confidence": 82
+      },
+      {
+        "type": "text",
+        "text": "act)",
+        "coordinates": {
+          "x": 871,
+          "y": 159,
+          "width": 28,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "©",
+        "coordinates": {
+          "x": 1645,
+          "y": 164,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 36
+      },
+      {
+        "type": "text",
+        "text": "The",
+        "coordinates": {
+          "x": 1661,
+          "y": 161,
+          "width": 19,
+          "height": 10
+        },
+        "confidence": 80
+      },
+      {
+        "type": "text",
+        "text": "selected",
+        "coordinates": {
+          "x": 1686,
+          "y": 151,
+          "width": 45,
+          "height": 27
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "action(s)",
+        "coordinates": {
+          "x": 1737,
+          "y": 162,
+          "width": 47,
+          "height": 11
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "are",
+        "coordinates": {
+          "x": 1789,
+          "y": 164,
+          "width": 17,
+          "height": 7
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "logged",
+        "coordinates": {
+          "x": 1811,
+          "y": 161,
+          "width": 39,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "before",
+        "coordinates": {
+          "x": 1855,
+          "y": 161,
+          "width": 36,
+          "height": 10
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "174",
+        "coordinates": {
+          "x": 368,
+          "y": 179,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 79
+      },
+      {
+        "type": "text",
+        "text": "except",
+        "coordinates": {
+          "x": 509,
+          "y": 179,
+          "width": 45,
+          "height": 12
+        },
+        "confidence": 81
+      },
+      {
+        "type": "text",
+        "text": "Exception",
+        "coordinates": {
+          "x": 564,
+          "y": 179,
+          "width": 67,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "as",
+        "coordinates": {
+          "x": 640,
+          "y": 181,
+          "width": 14,
+          "height": 7
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "e:",
+        "coordinates": {
+          "x": 663,
+          "y": 181,
+          "width": 12,
+          "height": 7
+        },
+        "confidence": 83
+      },
+      {
+        "type": "text",
+        "text": "confirmation,",
+        "coordinates": {
+          "x": 1661,
+          "y": 180,
+          "width": 140,
+          "height": 13
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "so",
+        "coordinates": {
+          "x": 1742,
+          "y": 166,
+          "width": 11,
+          "height": 32
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "you",
+        "coordinates": {
+          "x": 1758,
+          "y": 166,
+          "width": 19,
+          "height": 32
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "can",
+        "coordinates": {
+          "x": 1782,
+          "y": 166,
+          "width": 19,
+          "height": 32
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "verify",
+        "coordinates": {
+          "x": 1806,
+          "y": 166,
+          "width": 30,
+          "height": 32
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "which",
+        "coordinates": {
+          "x": 1843,
+          "y": 166,
+          "width": 30,
+          "height": 32
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "175",
+        "coordinates": {
+          "x": 368,
+          "y": 198,
+          "width": 21,
+          "height": 9
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "|",
+        "coordinates": {
+          "x": 508,
+          "y": 193,
+          "width": 1,
+          "height": 16
+        },
+        "confidence": 47
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 709,
+          "y": 198,
+          "width": 14,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "execute",
+        "coordinates": {
+          "x": 733,
+          "y": 200,
+          "width": 52,
+          "height": 7
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "action",
+        "coordinates": {
+          "x": 795,
+          "y": 198,
+          "width": 43,
+          "height": 9
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "%s:",
+        "coordinates": {
+          "x": 848,
+          "y": 197,
+          "width": 13,
+          "height": 10
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "%s\",",
+        "coordinates": {
+          "x": 879,
+          "y": 197,
+          "width": 27,
+          "height": 12
+        },
+        "confidence": 67
+      },
+      {
+        "type": "text",
+        "text": "act,",
+        "coordinates": {
+          "x": 918,
+          "y": 198,
+          "width": 27,
+          "height": 11
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "e)",
+        "coordinates": {
+          "x": 956,
+          "y": 197,
+          "width": 12,
+          "height": 12
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "click(s)",
+        "coordinates": {
+          "x": 1657,
+          "y": 190,
+          "width": 41,
+          "height": 27
+        },
+        "confidence": 41
+      },
+      {
+        "type": "text",
+        "text": "will",
+        "coordinates": {
+          "x": 1704,
+          "y": 190,
+          "width": 17,
+          "height": 27
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "run.",
+        "coordinates": {
+          "x": 1726,
+          "y": 203,
+          "width": 21,
+          "height": 7
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "BB",
+        "coordinates": {
+          "x": 225,
+          "y": 228,
+          "width": 16,
+          "height": 10
+        },
+        "confidence": 50
+      },
+      {
+        "type": "text",
+        "text": "Windows",
+        "coordinates": {
+          "x": 251,
+          "y": 218,
+          "width": 52,
+          "height": 28
+        },
+        "confidence": 83
+      },
+      {
+        "type": "text",
+        "text": "Powershell",
+        "coordinates": {
+          "x": 309,
+          "y": 218,
+          "width": 57,
+          "height": 28
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "x",
+        "coordinates": {
+          "x": 430,
+          "y": 228,
+          "width": 9,
+          "height": 9
+        },
+        "confidence": 85
+      },
+      {
+        "type": "text",
+        "text": "-",
+        "coordinates": {
+          "x": 1201,
+          "y": 228,
+          "width": 10,
+          "height": 1
+        },
+        "confidence": 77
+      },
+      {
+        "type": "text",
+        "text": "o",
+        "coordinates": {
+          "x": 1247,
+          "y": 224,
+          "width": 10,
+          "height": 10
+        },
+        "confidence": 77
+      },
+      {
+        "type": "text",
+        "text": "x",
+        "coordinates": {
+          "x": 1293,
+          "y": 224,
+          "width": 10,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "=",
+        "coordinates": {
+          "x": 1525,
+          "y": 225,
+          "width": 9,
+          "height": 8
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "=",
+        "coordinates": {
+          "x": 1603,
+          "y": 230,
+          "width": 3,
+          "height": 1
+        },
+        "confidence": 50
+      },
+      {
+        "type": "text",
+        "text": "|",
+        "coordinates": {
+          "x": 1615,
+          "y": 213,
+          "width": 9,
+          "height": 33
+        },
+        "confidence": 55
+      },
+      {
+        "type": "text",
+        "text": "tow",
+        "coordinates": {
+          "x": 1638,
+          "y": 233,
+          "width": 75,
+          "height": 9
+        },
+        "confidence": 36
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1667,
+          "y": 213,
+          "width": 12,
+          "height": 33
+        },
+        "confidence": 67
+      },
+      {
+        "type": "text",
+        "text": "use",
+        "coordinates": {
+          "x": 1684,
+          "y": 213,
+          "width": 17,
+          "height": 33
+        },
+        "confidence": 34
+      },
+      {
+        "type": "text",
+        "text": "it",
+        "coordinates": {
+          "x": 1706,
+          "y": 213,
+          "width": 12,
+          "height": 33
+        },
+        "confidence": 34
+      },
+      {
+        "type": "text",
+        "text": "Windows",
+        "coordinates": {
+          "x": 216,
+          "y": 260,
+          "width": 62,
+          "height": 22
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "PowerSheLL",
+        "coordinates": {
+          "x": 289,
+          "y": 260,
+          "width": 88,
+          "height": 22
+        },
+        "confidence": 77
+      },
+      {
+        "type": "text",
+        "text": "+",
+        "coordinates": {
+          "x": 1645,
+          "y": 271,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 49
+      },
+      {
+        "type": "text",
+        "text": "cop",
+        "coordinates": {
+          "x": 1665,
+          "y": 269,
+          "width": 24,
+          "height": 12
+        },
+        "confidence": 60
+      },
+      {
+        "type": "text",
+        "text": "for",
+        "coordinates": {
+          "x": 1875,
+          "y": 250,
+          "width": 18,
+          "height": 36
+        },
+        "confidence": 82
+      },
+      {
+        "type": "text",
+        "text": "A",
+        "coordinates": {
+          "x": 15,
+          "y": 288,
+          "width": 18,
+          "height": 22
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "Copyright",
+        "coordinates": {
+          "x": 217,
+          "y": 279,
+          "width": 79,
+          "height": 16
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "(C)",
+        "coordinates": {
+          "x": 308,
+          "y": 278,
+          "width": 23,
+          "height": 15
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "Microsoft",
+        "coordinates": {
+          "x": 343,
+          "y": 279,
+          "width": 79,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Corporation.",
+        "coordinates": {
+          "x": 433,
+          "y": 280,
+          "width": 104,
+          "height": 15
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "All",
+        "coordinates": {
+          "x": 549,
+          "y": 279,
+          "width": 26,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "rights",
+        "coordinates": {
+          "x": 585,
+          "y": 279,
+          "width": 53,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "reserved.",
+        "coordinates": {
+          "x": 648,
+          "y": 279,
+          "width": 78,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "-",
+        "coordinates": {
+          "x": 1573,
+          "y": 288,
+          "width": 12,
+          "height": 15
+        },
+        "confidence": 61
+      },
+      {
+        "type": "text",
+        "text": "manual",
+        "coordinates": {
+          "x": 1662,
+          "y": 273,
+          "width": 41,
+          "height": 30
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "confirmation.",
+        "coordinates": {
+          "x": 1708,
+          "y": 290,
+          "width": 71,
+          "height": 9
+        },
+        "confidence": 84
+      },
+      {
+        "type": "text",
+        "text": "Install",
+        "coordinates": {
+          "x": 217,
+          "y": 317,
+          "width": 61,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 288,
+          "y": 317,
+          "width": 26,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "latest",
+        "coordinates": {
+          "x": 325,
+          "y": 317,
+          "width": 52,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "PowerShell",
+        "coordinates": {
+          "x": 388,
+          "y": 317,
+          "width": 88,
+          "height": 12
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "for",
+        "coordinates": {
+          "x": 486,
+          "y": 317,
+          "width": 27,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "new",
+        "coordinates": {
+          "x": 523,
+          "y": 321,
+          "width": 26,
+          "height": 8
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "features",
+        "coordinates": {
+          "x": 558,
+          "y": 317,
+          "width": 71,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "and",
+        "coordinates": {
+          "x": 640,
+          "y": 317,
+          "width": 25,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "improvements!",
+        "coordinates": {
+          "x": 676,
+          "y": 317,
+          "width": 113,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "https:",
+        "coordinates": {
+          "x": 802,
+          "y": 317,
+          "width": 50,
+          "height": 16
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "//aka.ms/PSWindows",
+        "coordinates": {
+          "x": 856,
+          "y": 316,
+          "width": 160,
+          "height": 15
+        },
+        "confidence": 87
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "coordinates": {
+          "x": 1510,
+          "y": 338,
+          "width": 3,
+          "height": 1
+        },
+        "confidence": 63
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "coordinates": {
+          "x": 1645,
+          "y": 312,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 52
+      },
+      {
+        "type": "text",
+        "text": "ter",
+        "coordinates": {
+          "x": 1661,
+          "y": 310,
+          "width": 30,
+          "height": 28
+        },
+        "confidence": 33
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1693,
+          "y": 309,
+          "width": 18,
+          "height": 29
+        },
+        "confidence": 68
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1880,
+          "y": 328,
+          "width": 19,
+          "height": 10
+        },
+        "confidence": 74
+      },
+      {
+        "type": "text",
+        "text": "PS",
+        "coordinates": {
+          "x": 217,
+          "y": 356,
+          "width": 16,
+          "height": 11
+        },
+        "confidence": 89
+      },
+      {
+        "type": "text",
+        "text": "C:\\Users\\Brody",
+        "coordinates": {
+          "x": 244,
+          "y": 354,
+          "width": 125,
+          "height": 17
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "Burrell>",
+        "coordinates": {
+          "x": 379,
+          "y": 355,
+          "width": 71,
+          "height": 12
+        },
+        "confidence": 79
+      },
+      {
+        "type": "text",
+        "text": "cd",
+        "coordinates": {
+          "x": 460,
+          "y": 355,
+          "width": 16,
+          "height": 12
+        },
+        "confidence": 85
+      },
+      {
+        "type": "text",
+        "text": "\"C:\\Users\\Brody",
+        "coordinates": {
+          "x": 488,
+          "y": 355,
+          "width": 132,
+          "height": 16
+        },
+        "confidence": 63
+      },
+      {
+        "type": "text",
+        "text": "Burrell\\Desktop\\py\"",
+        "coordinates": {
+          "x": 631,
+          "y": 355,
+          "width": 168,
+          "height": 16
+        },
+        "confidence": 67
+      },
+      {
+        "type": "text",
+        "text": "—",
+        "coordinates": {
+          "x": 1534,
+          "y": 362,
+          "width": 10,
+          "height": 7
+        },
+        "confidence": 59
+      },
+      {
+        "type": "text",
+        "text": "selected",
+        "coordinates": {
+          "x": 1661,
+          "y": 344,
+          "width": 45,
+          "height": 34
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "action(s)",
+        "coordinates": {
+          "x": 1713,
+          "y": 344,
+          "width": 46,
+          "height": 34
+        },
+        "confidence": 79
+      },
+      {
+        "type": "text",
+        "text": "logged.",
+        "coordinates": {
+          "x": 1765,
+          "y": 348,
+          "width": 42,
+          "height": 13
+        },
+        "confidence": 75
+      },
+      {
+        "type": "text",
+        "text": "PS",
+        "coordinates": {
+          "x": 217,
+          "y": 375,
+          "width": 16,
+          "height": 11
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "C:\\Users\\Brody",
+        "coordinates": {
+          "x": 244,
+          "y": 373,
+          "width": 125,
+          "height": 17
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "Burrell\\Desktop\\py>",
+        "coordinates": {
+          "x": 379,
+          "y": 373,
+          "width": 170,
+          "height": 17
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "coordinates": {
+          "x": 561,
+          "y": 384,
+          "width": 3,
+          "height": 2
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": ".venv\\Scripts\\Activate.ps1",
+        "coordinates": {
+          "x": 579,
+          "y": 373,
+          "width": 230,
+          "height": 17
+        },
+        "confidence": 80
+      },
+      {
+        "type": "text",
+        "text": "*",
+        "coordinates": {
+          "x": 1645,
+          "y": 370,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 62
+      },
+      {
+        "type": "text",
+        "text": "Press",
+        "coordinates": {
+          "x": 1662,
+          "y": 363,
+          "width": 29,
+          "height": 31
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "F10",
+        "coordinates": {
+          "x": 1697,
+          "y": 368,
+          "width": 17,
+          "height": 9
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1718,
+          "y": 368,
+          "width": 11,
+          "height": 9
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "confirm",
+        "coordinates": {
+          "x": 1734,
+          "y": 363,
+          "width": 42,
+          "height": 31
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "and",
+        "coordinates": {
+          "x": 1783,
+          "y": 367,
+          "width": 19,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "execute",
+        "coordinates": {
+          "x": 1807,
+          "y": 363,
+          "width": 44,
+          "height": 31
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1855,
+          "y": 367,
+          "width": 18,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "(.venv)",
+        "coordinates": {
+          "x": 218,
+          "y": 393,
+          "width": 59,
+          "height": 13
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "PS",
+        "coordinates": {
+          "x": 289,
+          "y": 394,
+          "width": 16,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "C:\\Users\\Brody",
+        "coordinates": {
+          "x": 316,
+          "y": 392,
+          "width": 125,
+          "height": 17
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "BurrelL\\Desktop\\py>",
+        "coordinates": {
+          "x": 451,
+          "y": 392,
+          "width": 170,
+          "height": 17
+        },
+        "confidence": 61
+      },
+      {
+        "type": "text",
+        "text": "python",
+        "coordinates": {
+          "x": 631,
+          "y": 393,
+          "width": 52,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "\"Main",
+        "coordinates": {
+          "x": 695,
+          "y": 394,
+          "width": 42,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "Application.py\"",
+        "coordinates": {
+          "x": 748,
+          "y": 393,
+          "width": 132,
+          "height": 16
+        },
+        "confidence": 33
+      },
+      {
+        "type": "text",
+        "text": "single",
+        "coordinates": {
+          "x": 1661,
+          "y": 383,
+          "width": 33,
+          "height": 31
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "highest-priority",
+        "coordinates": {
+          "x": 1699,
+          "y": 387,
+          "width": 183,
+          "height": 13
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "action",
+        "coordinates": {
+          "x": 1793,
+          "y": 383,
+          "width": 30,
+          "height": 31
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "(or",
+        "coordinates": {
+          "x": 1830,
+          "y": 383,
+          "width": 14,
+          "height": 31
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Esc",
+        "coordinates": {
+          "x": 1850,
+          "y": 383,
+          "width": 17,
+          "height": 31
+        },
+        "confidence": 65
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1871,
+          "y": 383,
+          "width": 14,
+          "height": 31
+        },
+        "confidence": 65
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 413,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,668",
+        "coordinates": {
+          "x": 316,
+          "y": 413,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "_screen_analyzer_original",
+        "coordinates": {
+          "x": 433,
+          "y": 412,
+          "width": 223,
+          "height": 16
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 667,
+          "y": 413,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Screen",
+        "coordinates": {
+          "x": 712,
+          "y": 413,
+          "width": 52,
+          "height": 11
+        },
+        "confidence": 97
+      },
+      {
+        "type": "text",
+        "text": "dimensions",
+        "coordinates": {
+          "x": 775,
+          "y": 412,
+          "width": 88,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "detected:",
+        "coordinates": {
+          "x": 874,
+          "y": 412,
+          "width": 77,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "1920x1080",
+        "coordinates": {
+          "x": 964,
+          "y": 413,
+          "width": 80,
+          "height": 11
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "cancel).",
+        "coordinates": {
+          "x": 1661,
+          "y": 406,
+          "width": 42,
+          "height": 12
+        },
+        "confidence": 38
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 432,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 81
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,669",
+        "coordinates": {
+          "x": 316,
+          "y": 432,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "chatgpt_client",
+        "coordinates": {
+          "x": 433,
+          "y": 431,
+          "width": 124,
+          "height": 16
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "WARNING",
+        "coordinates": {
+          "x": 567,
+          "y": 432,
+          "width": 63,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Detected",
+        "coordinates": {
+          "x": 640,
+          "y": 431,
+          "width": 70,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "API",
+        "coordinates": {
+          "x": 720,
+          "y": 432,
+          "width": 26,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "key",
+        "coordinates": {
+          "x": 757,
+          "y": 431,
+          "width": 26,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "passed",
+        "coordinates": {
+          "x": 793,
+          "y": 431,
+          "width": 52,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "as",
+        "coordinates": {
+          "x": 856,
+          "y": 435,
+          "width": 16,
+          "height": 8
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "first",
+        "coordinates": {
+          "x": 882,
+          "y": 431,
+          "width": 44,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "positional",
+        "coordinates": {
+          "x": 937,
+          "y": 431,
+          "width": 88,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "argument;",
+        "coordinates": {
+          "x": 1036,
+          "y": 432,
+          "width": 77,
+          "height": 15
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "treating",
+        "coordinates": {
+          "x": 1125,
+          "y": 431,
+          "width": 71,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "first",
+        "coordinates": {
+          "x": 1206,
+          "y": 431,
+          "width": 44,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "arg",
+        "coordinates": {
+          "x": 1261,
+          "y": 435,
+          "width": 25,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "To",
+        "coordinates": {
+          "x": 1637,
+          "y": 440,
+          "width": 13,
+          "height": 9
+        },
+        "confidence": 72
+      },
+      {
+        "type": "text",
+        "text": "run",
+        "coordinates": {
+          "x": 1655,
+          "y": 442,
+          "width": 17,
+          "height": 7
+        },
+        "confidence": 89
+      },
+      {
+        "type": "text",
+        "text": "multiple",
+        "coordinates": {
+          "x": 1679,
+          "y": 421,
+          "width": 44,
+          "height": 35
+        },
+        "confidence": 44
+      },
+      {
+        "type": "text",
+        "text": "actions",
+        "coordinates": {
+          "x": 1729,
+          "y": 421,
+          "width": 38,
+          "height": 35
+        },
+        "confidence": 82
+      },
+      {
+        "type": "text",
+        "text": "as",
+        "coordinates": {
+          "x": 217,
+          "y": 454,
+          "width": 16,
+          "height": 8
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "api_key",
+        "coordinates": {
+          "x": 244,
+          "y": 450,
+          "width": 62,
+          "height": 16
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "and",
+        "coordinates": {
+          "x": 316,
+          "y": 450,
+          "width": 25,
+          "height": 12
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "using",
+        "coordinates": {
+          "x": 352,
+          "y": 450,
+          "width": 43,
+          "height": 16
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "default",
+        "coordinates": {
+          "x": 406,
+          "y": 450,
+          "width": 61,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "model.",
+        "coordinates": {
+          "x": 478,
+          "y": 450,
+          "width": 50,
+          "height": 12
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 470,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 87
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,669",
+        "coordinates": {
+          "x": 316,
+          "y": 470,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 82
+      },
+      {
+        "type": "text",
+        "text": "chatgpt_client",
+        "coordinates": {
+          "x": 433,
+          "y": 469,
+          "width": 124,
+          "height": 16
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 568,
+          "y": 470,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "ChatGPTClient",
+        "coordinates": {
+          "x": 613,
+          "y": 469,
+          "width": 115,
+          "height": 12
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "initialized",
+        "coordinates": {
+          "x": 739,
+          "y": 469,
+          "width": 97,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "for",
+        "coordinates": {
+          "x": 846,
+          "y": 469,
+          "width": 27,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "model:",
+        "coordinates": {
+          "x": 883,
+          "y": 469,
+          "width": 50,
+          "height": 12
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "+",
+        "coordinates": {
+          "x": 1645,
+          "y": 477,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "edit",
+        "coordinates": {
+          "x": 1662,
+          "y": 459,
+          "width": 21,
+          "height": 34
+        },
+        "confidence": 58
+      },
+      {
+        "type": "text",
+        "text": "(=",
+        "coordinates": {
+          "x": 1689,
+          "y": 459,
+          "width": 15,
+          "height": 34
+        },
+        "confidence": 39
+      },
+      {
+        "type": "text",
+        "text": "env]",
+        "coordinates": {
+          "x": 1706,
+          "y": 459,
+          "width": 29,
+          "height": 34
+        },
+        "confidence": 66
+      },
+      {
+        "type": "text",
+        "text": "and",
+        "coordinates": {
+          "x": 1743,
+          "y": 474,
+          "width": 17,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "set",
+        "coordinates": {
+          "x": 1766,
+          "y": 459,
+          "width": 19,
+          "height": 34
+        },
+        "confidence": 71
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 489,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,669",
+        "coordinates": {
+          "x": 316,
+          "y": 489,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "action_executor",
+        "coordinates": {
+          "x": 433,
+          "y": 488,
+          "width": 134,
+          "height": 14
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 577,
+          "y": 489,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "ActionExecutor",
+        "coordinates": {
+          "x": 621,
+          "y": 488,
+          "width": 126,
+          "height": 12
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "initialized",
+        "coordinates": {
+          "x": 757,
+          "y": 488,
+          "width": 97,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "with",
+        "coordinates": {
+          "x": 864,
+          "y": 488,
+          "width": 35,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "action",
+        "coordinates": {
+          "x": 910,
+          "y": 488,
+          "width": 52,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "delay",
+        "coordinates": {
+          "x": 973,
+          "y": 488,
+          "width": 44,
+          "height": 16
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "0.50s.",
+        "coordinates": {
+          "x": 1027,
+          "y": 489,
+          "width": 50,
+          "height": 11
+        },
+        "confidence": 74
+      },
+      {
+        "type": "text",
+        "text": "EXECUTE",
+        "coordinates": {
+          "x": 1662,
+          "y": 495,
+          "width": 50,
+          "height": 9
+        },
+        "confidence": 67
+      },
+      {
+        "type": "text",
+        "text": "MAX",
+        "coordinates": {
+          "x": 1718,
+          "y": 495,
+          "width": 28,
+          "height": 9
+        },
+        "confidence": 59
+      },
+      {
+        "type": "text",
+        "text": "ACTIONS=3",
+        "coordinates": {
+          "x": 1751,
+          "y": 495,
+          "width": 68,
+          "height": 9
+        },
+        "confidence": 59
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 508,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,669",
+        "coordinates": {
+          "x": 316,
+          "y": 508,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "__main__",
+        "coordinates": {
+          "x": 433,
+          "y": 507,
+          "width": 71,
+          "height": 14
+        },
+        "confidence": 82
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 514,
+          "y": 508,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Desktop",
+        "coordinates": {
+          "x": 559,
+          "y": 507,
+          "width": 62,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Analyzer",
+        "coordinates": {
+          "x": 630,
+          "y": 507,
+          "width": 72,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "initialized.",
+        "coordinates": {
+          "x": 712,
+          "y": 507,
+          "width": 104,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "‘©",
+        "coordinates": {
+          "x": 1645,
+          "y": 516,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 44
+      },
+      {
+        "type": "text",
+        "text": "Then",
+        "coordinates": {
+          "x": 1661,
+          "y": 513,
+          "width": 28,
+          "height": 10
+        },
+        "confidence": 44
+      },
+      {
+        "type": "text",
+        "text": "restart",
+        "coordinates": {
+          "x": 1694,
+          "y": 505,
+          "width": 126,
+          "height": 21
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1735,
+          "y": 501,
+          "width": 15,
+          "height": 29
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "program",
+        "coordinates": {
+          "x": 1757,
+          "y": 505,
+          "width": 44,
+          "height": 21
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1807,
+          "y": 501,
+          "width": 13,
+          "height": 29
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "apply",
+        "coordinates": {
+          "x": 1825,
+          "y": 501,
+          "width": 29,
+          "height": 29
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1860,
+          "y": 501,
+          "width": 18,
+          "height": 29
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 527,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,669",
+        "coordinates": {
+          "x": 316,
+          "y": 527,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "__main__",
+        "coordinates": {
+          "x": 433,
+          "y": 526,
+          "width": 71,
+          "height": 14
+        },
+        "confidence": 47
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 514,
+          "y": 527,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Starting",
+        "coordinates": {
+          "x": 559,
+          "y": 526,
+          "width": 70,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "interactive",
+        "coordinates": {
+          "x": 640,
+          "y": 526,
+          "width": 97,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "mode.",
+        "coordinates": {
+          "x": 748,
+          "y": 526,
+          "width": 41,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "change.",
+        "coordinates": {
+          "x": 1661,
+          "y": 533,
+          "width": 44,
+          "height": 13
+        },
+        "confidence": 87
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 546,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,679",
+        "coordinates": {
+          "x": 316,
+          "y": 546,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "_main__",
+        "coordinates": {
+          "x": 433,
+          "y": 545,
+          "width": 71,
+          "height": 14
+        },
+        "confidence": 53
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 514,
+          "y": 546,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Press",
+        "coordinates": {
+          "x": 559,
+          "y": 546,
+          "width": 43,
+          "height": 11
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "'F9'",
+        "coordinates": {
+          "x": 616,
+          "y": 546,
+          "width": 29,
+          "height": 11
+        },
+        "confidence": 57
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 657,
+          "y": 546,
+          "width": 17,
+          "height": 11
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "trigger",
+        "coordinates": {
+          "x": 684,
+          "y": 545,
+          "width": 63,
+          "height": 16
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "a",
+        "coordinates": {
+          "x": 757,
+          "y": 549,
+          "width": 8,
+          "height": 8
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "screen",
+        "coordinates": {
+          "x": 775,
+          "y": 549,
+          "width": 52,
+          "height": 8
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "analysis",
+        "coordinates": {
+          "x": 838,
+          "y": 545,
+          "width": 70,
+          "height": 16
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "cycle.",
+        "coordinates": {
+          "x": 919,
+          "y": 545,
+          "width": 50,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 565,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "17:01:05,679",
+        "coordinates": {
+          "x": 316,
+          "y": 565,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "__main__",
+        "coordinates": {
+          "x": 433,
+          "y": 564,
+          "width": 71,
+          "height": 14
+        },
+        "confidence": 32
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 514,
+          "y": 565,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "Press",
+        "coordinates": {
+          "x": 559,
+          "y": 565,
+          "width": 43,
+          "height": 11
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "‘ESC'",
+        "coordinates": {
+          "x": 616,
+          "y": 565,
+          "width": 38,
+          "height": 11
+        },
+        "confidence": 77
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 666,
+          "y": 565,
+          "width": 17,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "exit.",
+        "coordinates": {
+          "x": 694,
+          "y": 564,
+          "width": 41,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "=",
+        "coordinates": {
+          "x": 1531,
+          "y": 576,
+          "width": 3,
+          "height": 1
+        },
+        "confidence": 55
+      },
+      {
+        "type": "text",
+        "text": "Optional",
+        "coordinates": {
+          "x": 1637,
+          "y": 565,
+          "width": 49,
+          "height": 13
+        },
+        "confidence": 65
+      },
+      {
+        "type": "text",
+        "text": "additions",
+        "coordinates": {
+          "x": 1691,
+          "y": 565,
+          "width": 82,
+          "height": 10
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "|",
+        "coordinates": {
+          "x": 1747,
+          "y": 553,
+          "width": 4,
+          "height": 32
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "can",
+        "coordinates": {
+          "x": 1755,
+          "y": 553,
+          "width": 20,
+          "height": 32
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "do",
+        "coordinates": {
+          "x": 1779,
+          "y": 565,
+          "width": 14,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "now",
+        "coordinates": {
+          "x": 1798,
+          "y": 553,
+          "width": 23,
+          "height": 32
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "2025-09-27",
+        "coordinates": {
+          "x": 217,
+          "y": 584,
+          "width": 89,
+          "height": 11
+        },
+        "confidence": 85
+      },
+      {
+        "type": "text",
+        "text": "17:01:08,207",
+        "coordinates": {
+          "x": 316,
+          "y": 584,
+          "width": 107,
+          "height": 15
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "__main__",
+        "coordinates": {
+          "x": 433,
+          "y": 583,
+          "width": 71,
+          "height": 14
+        },
+        "confidence": 50
+      },
+      {
+        "type": "text",
+        "text": "INFO",
+        "coordinates": {
+          "x": 514,
+          "y": 584,
+          "width": 35,
+          "height": 11
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "Starting",
+        "coordinates": {
+          "x": 559,
+          "y": 583,
+          "width": 70,
+          "height": 16
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "new",
+        "coordinates": {
+          "x": 640,
+          "y": 587,
+          "width": 26,
+          "height": 8
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "screen",
+        "coordinates": {
+          "x": 676,
+          "y": 587,
+          "width": 52,
+          "height": 8
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "analysis",
+        "coordinates": {
+          "x": 739,
+          "y": 583,
+          "width": 70,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "cycle...",
+        "coordinates": {
+          "x": 820,
+          "y": 583,
+          "width": 68,
+          "height": 16
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "]",
+        "coordinates": {
+          "x": 216,
+          "y": 599,
+          "width": 1,
+          "height": 19
+        },
+        "confidence": 80
+      },
+      {
+        "type": "text",
+        "text": "«Instead",
+        "coordinates": {
+          "x": 1645,
+          "y": 601,
+          "width": 57,
+          "height": 10
+        },
+        "confidence": 47
+      },
+      {
+        "type": "text",
+        "text": "of",
+        "coordinates": {
+          "x": 1706,
+          "y": 591,
+          "width": 12,
+          "height": 27
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "proximity",
+        "coordinates": {
+          "x": 1722,
+          "y": 601,
+          "width": 156,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1780,
+          "y": 591,
+          "width": 10,
+          "height": 27
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "center,",
+        "coordinates": {
+          "x": 1796,
+          "y": 591,
+          "width": 39,
+          "height": 27
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "choose",
+        "coordinates": {
+          "x": 1841,
+          "y": 591,
+          "width": 41,
+          "height": 27
+        },
+        "confidence": 88
+      },
+      {
+        "type": "text",
+        "text": "highest",
+        "coordinates": {
+          "x": 1662,
+          "y": 620,
+          "width": 41,
+          "height": 13
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "‘button",
+        "coordinates": {
+          "x": 1708,
+          "y": 620,
+          "width": 40,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "confidence’",
+        "coordinates": {
+          "x": 1753,
+          "y": 620,
+          "width": 64,
+          "height": 10
+        },
+        "confidence": 78
+      },
+      {
+        "type": "text",
+        "text": "(if",
+        "coordinates": {
+          "x": 1822,
+          "y": 620,
+          "width": 11,
+          "height": 12
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "the",
+        "coordinates": {
+          "x": 1836,
+          "y": 620,
+          "width": 19,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "analyzer",
+        "coordinates": {
+          "x": 1661,
+          "y": 640,
+          "width": 48,
+          "height": 13
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "provides",
+        "coordinates": {
+          "x": 1713,
+          "y": 640,
+          "width": 48,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "scores)",
+        "coordinates": {
+          "x": 1765,
+          "y": 641,
+          "width": 39,
+          "height": 11
+        },
+        "confidence": 89
+      },
+      {
+        "type": "text",
+        "text": "—",
+        "coordinates": {
+          "x": 1808,
+          "y": 646,
+          "width": 13,
+          "height": 1
+        },
+        "confidence": 50
+      },
+      {
+        "type": "text",
+        "text": "I",
+        "coordinates": {
+          "x": 1825,
+          "y": 641,
+          "width": 2,
+          "height": 9
+        },
+        "confidence": 50
+      },
+      {
+        "type": "text",
+        "text": "can",
+        "coordinates": {
+          "x": 1832,
+          "y": 643,
+          "width": 19,
+          "height": 7
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "implement",
+        "coordinates": {
+          "x": 1662,
+          "y": 659,
+          "width": 61,
+          "height": 13
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "that",
+        "coordinates": {
+          "x": 1726,
+          "y": 659,
+          "width": 23,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "i",
+        "coordinates": {
+          "x": 1754,
+          "y": 659,
+          "width": 6,
+          "height": 10
+        },
+        "confidence": 66
+      },
+      {
+        "type": "text",
+        "text": "‘outputs",
+        "coordinates": {
+          "x": 1727,
+          "y": 682,
+          "width": 44,
+          "height": 12
+        },
+        "confidence": 54
+      },
+      {
+        "type": "text",
+        "text": "a",
+        "coordinates": {
+          "x": 1775,
+          "y": 684,
+          "width": 6,
+          "height": 7
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "confidence",
+        "coordinates": {
+          "x": 1785,
+          "y": 681,
+          "width": 63,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "metric",
+        "coordinates": {
+          "x": 1852,
+          "y": 682,
+          "width": 35,
+          "height": 9
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "per",
+        "coordinates": {
+          "x": 1662,
+          "y": 705,
+          "width": 18,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "detected",
+        "coordinates": {
+          "x": 1684,
+          "y": 702,
+          "width": 50,
+          "height": 10
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "UI",
+        "coordinates": {
+          "x": 1738,
+          "y": 703,
+          "width": 11,
+          "height": 9
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "element.",
+        "coordinates": {
+          "x": 1754,
+          "y": 702,
+          "width": 48,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "Add",
+        "coordinates": {
+          "x": 1661,
+          "y": 722,
+          "width": 23,
+          "height": 10
+        },
+        "confidence": 63
+      },
+      {
+        "type": "text",
+        "text": "a",
+        "coordinates": {
+          "x": 1689,
+          "y": 725,
+          "width": 5,
+          "height": 7
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "simple",
+        "coordinates": {
+          "x": 1699,
+          "y": 722,
+          "width": 37,
+          "height": 13
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "on-console",
+        "coordinates": {
+          "x": 1740,
+          "y": 722,
+          "width": 64,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "prompt",
+        "coordinates": {
+          "x": 1808,
+          "y": 723,
+          "width": 42,
+          "height": 12
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "(y/n)",
+        "coordinates": {
+          "x": 1854,
+          "y": 723,
+          "width": 26,
+          "height": 12
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "in",
+        "coordinates": {
+          "x": 1885,
+          "y": 725,
+          "width": 9,
+          "height": 7
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "addition",
+        "coordinates": {
+          "x": 1661,
+          "y": 741,
+          "width": 47,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1712,
+          "y": 742,
+          "width": 12,
+          "height": 9
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "F10",
+        "coordinates": {
+          "x": 1729,
+          "y": 742,
+          "width": 19,
+          "height": 9
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1752,
+          "y": 742,
+          "width": 11,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "confirm",
+        "coordinates": {
+          "x": 1768,
+          "y": 741,
+          "width": 43,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "execution.",
+        "coordinates": {
+          "x": 1815,
+          "y": 742,
+          "width": 58,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "*",
+        "coordinates": {
+          "x": 1645,
+          "y": 764,
+          "width": 5,
+          "height": 5
+        },
+        "confidence": 51
+      },
+      {
+        "type": "text",
+        "text": "Add",
+        "coordinates": {
+          "x": 1661,
+          "y": 761,
+          "width": 23,
+          "height": 10
+        },
+        "confidence": 65
+      },
+      {
+        "type": "text",
+        "text": "a",
+        "coordinates": {
+          "x": 1689,
+          "y": 764,
+          "width": 5,
+          "height": 7
+        },
+        "confidence": 83
+      },
+      {
+        "type": "text",
+        "text": "3-second",
+        "coordinates": {
+          "x": 1699,
+          "y": 761,
+          "width": 52,
+          "height": 10
+        },
+        "confidence": 84
+      },
+      {
+        "type": "text",
+        "text": "countdowm",
+        "coordinates": {
+          "x": 1756,
+          "y": 761,
+          "width": 63,
+          "height": 10
+        },
+        "confidence": 77
+      },
+      {
+        "type": "text",
+        "text": "prior",
+        "coordinates": {
+          "x": 1824,
+          "y": 764,
+          "width": 27,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1854,
+          "y": 762,
+          "width": 12,
+          "height": 9
+        },
+        "confidence": 89
+      },
+      {
+        "type": "text",
+        "text": "‘executing",
+        "coordinates": {
+          "x": 1661,
+          "y": 781,
+          "width": 55,
+          "height": 12
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "actions",
+        "coordinates": {
+          "x": 1720,
+          "y": 781,
+          "width": 41,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "so",
+        "coordinates": {
+          "x": 1765,
+          "y": 783,
+          "width": 12,
+          "height": 7
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "you",
+        "coordinates": {
+          "x": 1781,
+          "y": 783,
+          "width": 21,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "can",
+        "coordinates": {
+          "x": 1806,
+          "y": 783,
+          "width": 19,
+          "height": 7
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "abort",
+        "coordinates": {
+          "x": 1830,
+          "y": 780,
+          "width": 30,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "by",
+        "coordinates": {
+          "x": 1865,
+          "y": 780,
+          "width": 13,
+          "height": 13
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "moving",
+        "coordinates": {
+          "x": 1662,
+          "y": 803,
+          "width": 42,
+          "height": 10
+        },
+        "confidence": 91
+      },
+      {
+        "type": "text",
+        "text": "mouse",
+        "coordinates": {
+          "x": 1709,
+          "y": 803,
+          "width": 37,
+          "height": 7
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1750,
+          "y": 801,
+          "width": 12,
+          "height": 9
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "a",
+        "coordinates": {
+          "x": 1766,
+          "y": 803,
+          "width": 6,
+          "height": 7
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "comer.",
+        "coordinates": {
+          "x": 1776,
+          "y": 803,
+          "width": 39,
+          "height": 7
+        },
+        "confidence": 71
+      },
+      {
+        "type": "text",
+        "text": "toe",
+        "coordinates": {
+          "x": 810,
+          "y": 851,
+          "width": 27,
+          "height": 4
+        },
+        "confidence": 37
+      },
+      {
+        "type": "text",
+        "text": "8)",
+        "coordinates": {
+          "x": 849,
+          "y": 849,
+          "width": 10,
+          "height": 7
+        },
+        "confidence": 31
+      },
+      {
+        "type": "text",
+        "text": "Which,",
+        "coordinates": {
+          "x": 1637,
+          "y": 832,
+          "width": 38,
+          "height": 12
+        },
+        "confidence": 89
+      },
+      {
+        "type": "text",
+        "text": "if",
+        "coordinates": {
+          "x": 1680,
+          "y": 832,
+          "width": 7,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "any,",
+        "coordinates": {
+          "x": 1693,
+          "y": 822,
+          "width": 20,
+          "height": 28
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "would",
+        "coordinates": {
+          "x": 1721,
+          "y": 822,
+          "width": 29,
+          "height": 28
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "you",
+        "coordinates": {
+          "x": 1756,
+          "y": 835,
+          "width": 20,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "like",
+        "coordinates": {
+          "x": 1777,
+          "y": 822,
+          "width": 23,
+          "height": 28
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "me",
+        "coordinates": {
+          "x": 1808,
+          "y": 835,
+          "width": 12,
+          "height": 7
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 1825,
+          "y": 833,
+          "width": 11,
+          "height": 9
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "add?",
+        "coordinates": {
+          "x": 1841,
+          "y": 832,
+          "width": 27,
+          "height": 10
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "210",
+        "coordinates": {
+          "x": 368,
+          "y": 863,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 76
+      },
+      {
+        "type": "text",
+        "text": "except",
+        "coordinates": {
+          "x": 479,
+          "y": 865,
+          "width": 43,
+          "height": 7
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "Exception:",
+        "coordinates": {
+          "x": 533,
+          "y": 863,
+          "width": 73,
+          "height": 9
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "24",
+        "coordinates": {
+          "x": 368,
+          "y": 882,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 40
+      },
+      {
+        "type": "text",
+        "text": "LOG.exception(\"Error",
+        "coordinates": {
+          "x": 510,
+          "y": 881,
+          "width": 152,
+          "height": 13
+        },
+        "confidence": 36
+      },
+      {
+        "type": "text",
+        "text": "selecting",
+        "coordinates": {
+          "x": 671,
+          "y": 881,
+          "width": 68,
+          "height": 13
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "top",
+        "coordinates": {
+          "x": 748,
+          "y": 884,
+          "width": 21,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "actions;",
+        "coordinates": {
+          "x": 779,
+          "y": 881,
+          "width": 58,
+          "height": 12
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "falling",
+        "coordinates": {
+          "x": 848,
+          "y": 881,
+          "width": 52,
+          "height": 13
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "back",
+        "coordinates": {
+          "x": 910,
+          "y": 881,
+          "width": 29,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "to",
+        "coordinates": {
+          "x": 948,
+          "y": 882,
+          "width": 14,
+          "height": 9
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "executing",
+        "coordinates": {
+          "x": 971,
+          "y": 882,
+          "width": 68,
+          "height": 12
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "all",
+        "coordinates": {
+          "x": 1049,
+          "y": 881,
+          "width": 20,
+          "height": 10
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "parsed",
+        "coordinates": {
+          "x": 1079,
+          "y": 881,
+          "width": 44,
+          "height": 13
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "actions.”)",
+        "coordinates": {
+          "x": 1133,
+          "y": 881,
+          "width": 74,
+          "height": 13
+        },
+        "confidence": 86
+      },
+      {
+        "type": "text",
+        "text": "oe",
+        "coordinates": {
+          "x": 1693,
+          "y": 873,
+          "width": 40,
+          "height": 14
+        },
+        "confidence": 71
+      },
+      {
+        "type": "text",
+        "text": "212",
+        "coordinates": {
+          "x": 368,
+          "y": 901,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "selected",
+        "coordinates": {
+          "x": 510,
+          "y": 900,
+          "width": 59,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "=",
+        "coordinates": {
+          "x": 579,
+          "y": 905,
+          "width": 6,
+          "height": 3
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "actions",
+        "coordinates": {
+          "x": 594,
+          "y": 900,
+          "width": 52,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "@",
+        "coordinates": {
+          "x": 12,
+          "y": 926,
+          "width": 24,
+          "height": 24
+        },
+        "confidence": 70
+      },
+      {
+        "type": "text",
+        "text": "214",
+        "coordinates": {
+          "x": 368,
+          "y": 939,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 78
+      },
+      {
+        "type": "text",
+        "text": "#",
+        "coordinates": {
+          "x": 478,
+          "y": 939,
+          "width": 7,
+          "height": 9
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "Ask",
+        "coordinates": {
+          "x": 494,
+          "y": 938,
+          "width": 21,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "for",
+        "coordinates": {
+          "x": 525,
+          "y": 938,
+          "width": 21,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "confirmation",
+        "coordinates": {
+          "x": 556,
+          "y": 938,
+          "width": 90,
+          "height": 10
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "if",
+        "coordinates": {
+          "x": 656,
+          "y": 938,
+          "width": 13,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "required",
+        "coordinates": {
+          "x": 679,
+          "y": 938,
+          "width": 59,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "‘Add",
+        "coordinates": {
+          "x": 1644,
+          "y": 944,
+          "width": 23,
+          "height": 10
+        },
+        "confidence": 78
+      },
+      {
+        "type": "text",
+        "text": "context",
+        "coordinates": {
+          "x": 1672,
+          "y": 928,
+          "width": 40,
+          "height": 32
+        },
+        "confidence": 85
+      },
+      {
+        "type": "text",
+        "text": "(2),",
+        "coordinates": {
+          "x": 1718,
+          "y": 928,
+          "width": 17,
+          "height": 32
+        },
+        "confidence": 81
+      },
+      {
+        "type": "text",
+        "text": "extensions",
+        "coordinates": {
+          "x": 1740,
+          "y": 945,
+          "width": 86,
+          "height": 11
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "(@),",
+        "coordinates": {
+          "x": 1805,
+          "y": 928,
+          "width": 25,
+          "height": 32
+        },
+        "confidence": 92
+      },
+      {
+        "type": "text",
+        "text": "commands",
+        "coordinates": {
+          "x": 1831,
+          "y": 944,
+          "width": 62,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "215",
+        "coordinates": {
+          "x": 368,
+          "y": 958,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 81
+      },
+      {
+        "type": "text",
+        "text": "ok",
+        "coordinates": {
+          "x": 478,
+          "y": 957,
+          "width": 15,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "=",
+        "coordinates": {
+          "x": 502,
+          "y": 962,
+          "width": 6,
+          "height": 3
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "self.wait_for_confirmation()",
+        "coordinates": {
+          "x": 517,
+          "y": 957,
+          "width": 213,
+          "height": 13
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "216",
+        "coordinates": {
+          "x": 368,
+          "y": 977,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "if",
+        "coordinates": {
+          "x": 479,
+          "y": 976,
+          "width": 14,
+          "height": 10
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "not",
+        "coordinates": {
+          "x": 502,
+          "y": 979,
+          "width": 21,
+          "height": 7
+        },
+        "confidence": 94
+      },
+      {
+        "type": "text",
+        "text": "ok:",
+        "coordinates": {
+          "x": 532,
+          "y": 976,
+          "width": 20,
+          "height": 10
+        },
+        "confidence": 96
+      },
+      {
+        "type": "text",
+        "text": "‘Agent",
+        "coordinates": {
+          "x": 1650,
+          "y": 974,
+          "width": 41,
+          "height": 10
+        },
+        "confidence": 69
+      },
+      {
+        "type": "text",
+        "text": "x",
+        "coordinates": {
+          "x": 1840,
+          "y": 971,
+          "width": 14,
+          "height": 14
+        },
+        "confidence": 42
+      },
+      {
+        "type": "text",
+        "text": "Py",
+        "coordinates": {
+          "x": 1866,
+          "y": 971,
+          "width": 27,
+          "height": 13
+        },
+        "confidence": 44
+      },
+      {
+        "type": "text",
+        "text": "217",
+        "coordinates": {
+          "x": 368,
+          "y": 996,
+          "width": 22,
+          "height": 9
+        },
+        "confidence": 90
+      },
+      {
+        "type": "text",
+        "text": "cancelled",
+        "coordinates": {
+          "x": 663,
+          "y": 995,
+          "width": 68,
+          "height": 10
+        },
+        "confidence": 95
+      },
+      {
+        "type": "text",
+        "text": "by",
+        "coordinates": {
+          "x": 741,
+          "y": 995,
+          "width": 13,
+          "height": 13
+        },
+        "confidence": 93
+      },
+      {
+        "type": "text",
+        "text": "user.”)",
+        "coordinates": {
+          "x": 764,
+          "y": 995,
+          "width": 50,
+          "height": 13
+        },
+        "confidence": 46
+      },
+      {
+        "type": "text",
+        "text": "x",
+        "coordinates": {
+          "x": 13,
+          "y": 1015,
+          "width": 9,
+          "height": 12
+        },
+        "confidence": 44
+      },
+      {
+        "type": "text",
+        "text": "Python",
+        "coordinates": {
+          "x": 1762,
+          "y": 1017,
+          "width": 35,
+          "height": 12
+        },
+        "confidence": 75
+      },
+      {
+        "type": "text",
+        "text": "@",
+        "coordinates": {
+          "x": 1814,
+          "y": 1015,
+          "width": 14,
+          "height": 12
+        },
+        "confidence": 40
+      },
+      {
+        "type": "text",
+        "text": "3.137",
+        "coordinates": {
+          "x": 1844,
+          "y": 1017,
+          "width": 31,
+          "height": 9
+        },
+        "confidence": 66
+      },
+      {
+        "type": "text",
+        "text": "O",
+        "coordinates": {
+          "x": 1893,
+          "y": 1015,
+          "width": 11,
+          "height": 12
+        },
+        "confidence": 66
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 56,
+          "y": 1061,
+          "width": 31,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 904,
+          "y": 1053,
+          "width": 29,
+          "height": 13
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 756,
+          "y": 1051,
+          "width": 41,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1215,
+          "y": 1047,
+          "width": 24,
+          "height": 19
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1127,
+          "y": 1046,
+          "width": 24,
+          "height": 20
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 19,
+          "y": 1046,
+          "width": 23,
+          "height": 20
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1083,
+          "y": 1045,
+          "width": 24,
+          "height": 22
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 683,
+          "y": 1045,
+          "width": 23,
+          "height": 23
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1171,
+          "y": 1045,
+          "width": 24,
+          "height": 21
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1040,
+          "y": 1045,
+          "width": 22,
+          "height": 21
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 11,
+          "y": 973,
+          "width": 26,
+          "height": 26
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 11,
+          "y": 925,
+          "width": 26,
+          "height": 26
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1755,
+          "y": 834,
+          "width": 22,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1690,
+          "y": 834,
+          "width": 22,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1841,
+          "y": 831,
+          "width": 28,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1716,
+          "y": 831,
+          "width": 36,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1646,
+          "y": 831,
+          "width": 30,
+          "height": 13
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1780,
+          "y": 783,
+          "width": 23,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1829,
+          "y": 780,
+          "width": 31,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1711,
+          "y": 761,
+          "width": 41,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 761,
+          "width": 24,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1767,
+          "y": 740,
+          "width": 45,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1807,
+          "y": 723,
+          "width": 43,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 722,
+          "width": 24,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1753,
+          "y": 702,
+          "width": 41,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1683,
+          "y": 702,
+          "width": 52,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 678,
+          "width": 63,
+          "height": 18
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1765,
+          "y": 640,
+          "width": 36,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1712,
+          "y": 642,
+          "width": 49,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1778,
+          "y": 620,
+          "width": 40,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 620,
+          "width": 42,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 600,
+          "width": 42,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1636,
+          "y": 565,
+          "width": 51,
+          "height": 14
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1755,
+          "y": 515,
+          "width": 51,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1824,
+          "y": 513,
+          "width": 33,
+          "height": 14
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 513,
+          "width": 29,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 494,
+          "width": 21,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1741,
+          "y": 474,
+          "width": 22,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1686,
+          "y": 467,
+          "width": 51,
+          "height": 23
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1676,
+          "y": 439,
+          "width": 48,
+          "height": 14
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1660,
+          "y": 405,
+          "width": 44,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 390,
+          "width": 34,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1698,
+          "y": 387,
+          "width": 42,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1741,
+          "y": 389,
+          "width": 47,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1781,
+          "y": 366,
+          "width": 22,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1768,
+          "y": 348,
+          "width": 39,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1712,
+          "y": 350,
+          "width": 49,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1764,
+          "y": 347,
+          "width": 23,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1768,
+          "y": 331,
+          "width": 52,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1823,
+          "y": 328,
+          "width": 31,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 327,
+          "width": 29,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1765,
+          "y": 311,
+          "width": 31,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 309,
+          "width": 23,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 4,
+          "y": 231,
+          "width": 40,
+          "height": 40
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1660,
+          "y": 200,
+          "width": 40,
+          "height": 13
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 12,
+          "y": 191,
+          "width": 24,
+          "height": 24
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1840,
+          "y": 180,
+          "width": 34,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1805,
+          "y": 179,
+          "width": 32,
+          "height": 15
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1814,
+          "y": 161,
+          "width": 37,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1736,
+          "y": 163,
+          "width": 49,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1686,
+          "y": 161,
+          "width": 47,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 161,
+          "width": 21,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1854,
+          "y": 160,
+          "width": 37,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1810,
+          "y": 160,
+          "width": 23,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1805,
+          "y": 141,
+          "width": 39,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1837,
+          "y": 102,
+          "width": 38,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1717,
+          "y": 101,
+          "width": 51,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 13,
+          "y": 95,
+          "width": 22,
+          "height": 24
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1788,
+          "y": 84,
+          "width": 26,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 1661,
+          "y": 76,
+          "width": 51,
+          "height": 23
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 12,
+          "y": 46,
+          "width": 23,
+          "height": 26
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 363,
+          "y": 13,
+          "width": 28,
+          "height": 12
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 260,
+          "y": 12,
+          "width": 23,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 78,
+          "y": 12,
+          "width": 22,
+          "height": 11
+        }
+      },
+      {
+        "type": "button",
+        "coordinates": {
+          "x": 184,
+          "y": 12,
+          "width": 29,
+          "height": 11
+        }
+      }
+    ],
+    "windows": [
+      {
+        "type": "window",
+        "coordinates": {
+          "x": 0,
+          "y": 35,
+          "width": 1920,
+          "height": 975
+        }
+      }
+    ],
+    "icons": []
+  },
+  "interaction_points": [
+    {
+      "type": "text_click",
+      "description": "Click text: '44'",
+      "coordinates": [
+        382,
+        101
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'class'",
+      "coordinates": [
+        435,
+        102
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ActionExecutor:'",
+      "coordinates": [
+        519,
+        106
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘Selection'",
+      "coordinates": [
+        1679,
+        107
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'heuristic:'",
+      "coordinates": [
+        1741,
+        107
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions'",
+      "coordinates": [
+        1823,
+        107
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'are'",
+      "coordinates": [
+        1825,
+        107
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'scored'",
+      "coordinates": [
+        1856,
+        107
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'by'",
+      "coordinates": [
+        1886,
+        108
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cm'",
+      "coordinates": [
+        83,
+        131
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Python'",
+      "coordinates": [
+        142,
+        127
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'def_execute_actions(self,'",
+      "coordinates": [
+        542,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions:'",
+      "coordinates": [
+        677,
+        120
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'List[Dict{str,'",
+      "coordinates": [
+        770,
+        124
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Any]])'",
+      "coordinates": [
+        854,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'None:'",
+      "coordinates": [
+        927,
+        120
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ti,'",
+      "coordinates": [
+        1504,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Manhattan'",
+      "coordinates": [
+        1692,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'distance'",
+      "coordinates": [
+        1750,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1783,
+        127
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1801,
+        127
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'screen'",
+      "coordinates": [
+        1834,
+        121
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'centers'",
+      "coordinates": [
+        1876,
+        128
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Qo'",
+      "coordinates": [
+        22,
+        152
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(2'",
+      "coordinates": [
+        83,
+        152
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Python'",
+      "coordinates": [
+        140,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'language'",
+      "coordinates": [
+        189,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'support'",
+      "coordinates": [
+        242,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'with'",
+      "coordinates": [
+        280,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'exte...'",
+      "coordinates": [
+        313,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '172'",
+      "coordinates": [
+        379,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'else:'",
+      "coordinates": [
+        557,
+        145
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '——'",
+      "coordinates": [
+        1513,
+        147
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1669,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'closest'",
+      "coordinates": [
+        1731,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'N'",
+      "coordinates": [
+        1730,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions'",
+      "coordinates": [
+        1758,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'are'",
+      "coordinates": [
+        1791,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'selected.'",
+      "coordinates": [
+        1829,
+        146
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '@'",
+      "coordinates": [
+        126,
+        165
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Microsoft'",
+      "coordinates": [
+        163,
+        164
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '173'",
+      "coordinates": [
+        379,
+        164
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '|'",
+      "coordinates": [
+        539,
+        164
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'LoG.warning(\"Unknown'",
+      "coordinates": [
+        647,
+        165
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action'",
+      "coordinates": [
+        755,
+        164
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'type:'",
+      "coordinates": [
+        803,
+        166
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '%s\",'",
+      "coordinates": [
+        846,
+        165
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'act)'",
+      "coordinates": [
+        885,
+        165
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '©'",
+      "coordinates": [
+        1647,
+        166
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'The'",
+      "coordinates": [
+        1670,
+        166
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'selected'",
+      "coordinates": [
+        1708,
+        164
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action(s)'",
+      "coordinates": [
+        1760,
+        167
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'are'",
+      "coordinates": [
+        1797,
+        167
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'logged'",
+      "coordinates": [
+        1830,
+        167
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'before'",
+      "coordinates": [
+        1873,
+        166
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '174'",
+      "coordinates": [
+        379,
+        183
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'except'",
+      "coordinates": [
+        531,
+        185
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Exception'",
+      "coordinates": [
+        597,
+        185
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'as'",
+      "coordinates": [
+        647,
+        184
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'e:'",
+      "coordinates": [
+        669,
+        184
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confirmation,'",
+      "coordinates": [
+        1731,
+        186
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'so'",
+      "coordinates": [
+        1747,
+        182
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'you'",
+      "coordinates": [
+        1767,
+        182
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'can'",
+      "coordinates": [
+        1791,
+        182
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'verify'",
+      "coordinates": [
+        1821,
+        182
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'which'",
+      "coordinates": [
+        1858,
+        182
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '175'",
+      "coordinates": [
+        378,
+        202
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '|'",
+      "coordinates": [
+        508,
+        201
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        716,
+        202
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'execute'",
+      "coordinates": [
+        759,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action'",
+      "coordinates": [
+        816,
+        202
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '%s:'",
+      "coordinates": [
+        854,
+        202
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '%s\",'",
+      "coordinates": [
+        892,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'act,'",
+      "coordinates": [
+        931,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'e)'",
+      "coordinates": [
+        962,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'click(s)'",
+      "coordinates": [
+        1677,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'will'",
+      "coordinates": [
+        1712,
+        203
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'run.'",
+      "coordinates": [
+        1736,
+        206
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'BB'",
+      "coordinates": [
+        233,
+        233
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Windows'",
+      "coordinates": [
+        277,
+        232
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Powershell'",
+      "coordinates": [
+        337,
+        232
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'x'",
+      "coordinates": [
+        434,
+        232
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '-'",
+      "coordinates": [
+        1206,
+        228
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'o'",
+      "coordinates": [
+        1252,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'x'",
+      "coordinates": [
+        1298,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '='",
+      "coordinates": [
+        1529,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '='",
+      "coordinates": [
+        1604,
+        230
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '|'",
+      "coordinates": [
+        1619,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'tow'",
+      "coordinates": [
+        1675,
+        237
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1673,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'use'",
+      "coordinates": [
+        1692,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'it'",
+      "coordinates": [
+        1712,
+        229
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Windows'",
+      "coordinates": [
+        247,
+        271
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'PowerSheLL'",
+      "coordinates": [
+        333,
+        271
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '+'",
+      "coordinates": [
+        1647,
+        273
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cop'",
+      "coordinates": [
+        1677,
+        275
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'for'",
+      "coordinates": [
+        1884,
+        268
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'A'",
+      "coordinates": [
+        24,
+        299
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Copyright'",
+      "coordinates": [
+        256,
+        287
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(C)'",
+      "coordinates": [
+        319,
+        285
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Microsoft'",
+      "coordinates": [
+        382,
+        285
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Corporation.'",
+      "coordinates": [
+        485,
+        287
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'All'",
+      "coordinates": [
+        562,
+        285
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'rights'",
+      "coordinates": [
+        611,
+        287
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'reserved.'",
+      "coordinates": [
+        687,
+        285
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '-'",
+      "coordinates": [
+        1579,
+        295
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'manual'",
+      "coordinates": [
+        1682,
+        288
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confirmation.'",
+      "coordinates": [
+        1743,
+        294
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Install'",
+      "coordinates": [
+        247,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        301,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'latest'",
+      "coordinates": [
+        351,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'PowerShell'",
+      "coordinates": [
+        432,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'for'",
+      "coordinates": [
+        499,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'new'",
+      "coordinates": [
+        536,
+        325
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'features'",
+      "coordinates": [
+        593,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'and'",
+      "coordinates": [
+        652,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'improvements!'",
+      "coordinates": [
+        732,
+        325
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'https:'",
+      "coordinates": [
+        827,
+        325
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '//aka.ms/PSWindows'",
+      "coordinates": [
+        936,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: ':'",
+      "coordinates": [
+        1511,
+        338
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '.'",
+      "coordinates": [
+        1647,
+        314
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ter'",
+      "coordinates": [
+        1676,
+        324
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1702,
+        323
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1889,
+        333
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'PS'",
+      "coordinates": [
+        225,
+        361
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'C:\\Users\\Brody'",
+      "coordinates": [
+        306,
+        362
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Burrell>'",
+      "coordinates": [
+        414,
+        361
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cd'",
+      "coordinates": [
+        468,
+        361
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '\"C:\\Users\\Brody'",
+      "coordinates": [
+        554,
+        363
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Burrell\\Desktop\\py\"'",
+      "coordinates": [
+        715,
+        363
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '—'",
+      "coordinates": [
+        1539,
+        365
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'selected'",
+      "coordinates": [
+        1683,
+        361
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action(s)'",
+      "coordinates": [
+        1736,
+        361
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'logged.'",
+      "coordinates": [
+        1786,
+        354
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'PS'",
+      "coordinates": [
+        225,
+        380
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'C:\\Users\\Brody'",
+      "coordinates": [
+        306,
+        381
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Burrell\\Desktop\\py>'",
+      "coordinates": [
+        464,
+        381
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '.'",
+      "coordinates": [
+        562,
+        385
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '.venv\\Scripts\\Activate.ps1'",
+      "coordinates": [
+        694,
+        381
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '*'",
+      "coordinates": [
+        1647,
+        372
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Press'",
+      "coordinates": [
+        1676,
+        378
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'F10'",
+      "coordinates": [
+        1705,
+        372
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1723,
+        372
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confirm'",
+      "coordinates": [
+        1755,
+        378
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'and'",
+      "coordinates": [
+        1792,
+        372
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'execute'",
+      "coordinates": [
+        1829,
+        378
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1864,
+        372
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(.venv)'",
+      "coordinates": [
+        247,
+        399
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'PS'",
+      "coordinates": [
+        297,
+        399
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'C:\\Users\\Brody'",
+      "coordinates": [
+        378,
+        400
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'BurrelL\\Desktop\\py>'",
+      "coordinates": [
+        536,
+        400
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'python'",
+      "coordinates": [
+        657,
+        401
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '\"Main'",
+      "coordinates": [
+        716,
+        399
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Application.py\"'",
+      "coordinates": [
+        814,
+        401
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'single'",
+      "coordinates": [
+        1677,
+        398
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'highest-priority'",
+      "coordinates": [
+        1790,
+        393
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action'",
+      "coordinates": [
+        1808,
+        398
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(or'",
+      "coordinates": [
+        1837,
+        398
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Esc'",
+      "coordinates": [
+        1858,
+        398
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1878,
+        398
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,668'",
+      "coordinates": [
+        369,
+        420
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '_screen_analyzer_original'",
+      "coordinates": [
+        544,
+        420
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        684,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Screen'",
+      "coordinates": [
+        738,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'dimensions'",
+      "coordinates": [
+        819,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'detected:'",
+      "coordinates": [
+        912,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '1920x1080'",
+      "coordinates": [
+        1004,
+        418
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cancel).'",
+      "coordinates": [
+        1682,
+        412
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,669'",
+      "coordinates": [
+        369,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'chatgpt_client'",
+      "coordinates": [
+        495,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'WARNING'",
+      "coordinates": [
+        598,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Detected'",
+      "coordinates": [
+        675,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'API'",
+      "coordinates": [
+        733,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'key'",
+      "coordinates": [
+        770,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'passed'",
+      "coordinates": [
+        819,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'as'",
+      "coordinates": [
+        864,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'first'",
+      "coordinates": [
+        904,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'positional'",
+      "coordinates": [
+        981,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'argument;'",
+      "coordinates": [
+        1074,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'treating'",
+      "coordinates": [
+        1160,
+        439
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'first'",
+      "coordinates": [
+        1228,
+        437
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'arg'",
+      "coordinates": [
+        1273,
+        441
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'To'",
+      "coordinates": [
+        1643,
+        444
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'run'",
+      "coordinates": [
+        1663,
+        445
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'multiple'",
+      "coordinates": [
+        1701,
+        438
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions'",
+      "coordinates": [
+        1748,
+        438
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'as'",
+      "coordinates": [
+        225,
+        458
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'api_key'",
+      "coordinates": [
+        275,
+        458
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'and'",
+      "coordinates": [
+        328,
+        456
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'using'",
+      "coordinates": [
+        373,
+        458
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'default'",
+      "coordinates": [
+        436,
+        456
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'model.'",
+      "coordinates": [
+        503,
+        456
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,669'",
+      "coordinates": [
+        369,
+        477
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'chatgpt_client'",
+      "coordinates": [
+        495,
+        477
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        585,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ChatGPTClient'",
+      "coordinates": [
+        670,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'initialized'",
+      "coordinates": [
+        787,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'for'",
+      "coordinates": [
+        859,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'model:'",
+      "coordinates": [
+        908,
+        475
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '+'",
+      "coordinates": [
+        1647,
+        479
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'edit'",
+      "coordinates": [
+        1672,
+        476
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(='",
+      "coordinates": [
+        1696,
+        476
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'env]'",
+      "coordinates": [
+        1720,
+        476
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'and'",
+      "coordinates": [
+        1751,
+        479
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'set'",
+      "coordinates": [
+        1775,
+        476
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,669'",
+      "coordinates": [
+        369,
+        496
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action_executor'",
+      "coordinates": [
+        500,
+        495
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        594,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ActionExecutor'",
+      "coordinates": [
+        684,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'initialized'",
+      "coordinates": [
+        805,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'with'",
+      "coordinates": [
+        881,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'action'",
+      "coordinates": [
+        936,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'delay'",
+      "coordinates": [
+        995,
+        496
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '0.50s.'",
+      "coordinates": [
+        1052,
+        494
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'EXECUTE'",
+      "coordinates": [
+        1687,
+        499
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'MAX'",
+      "coordinates": [
+        1732,
+        499
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ACTIONS=3'",
+      "coordinates": [
+        1785,
+        499
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        513
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,669'",
+      "coordinates": [
+        369,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '__main__'",
+      "coordinates": [
+        468,
+        514
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        531,
+        513
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Desktop'",
+      "coordinates": [
+        590,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Analyzer'",
+      "coordinates": [
+        666,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'initialized.'",
+      "coordinates": [
+        764,
+        513
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘©'",
+      "coordinates": [
+        1647,
+        518
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Then'",
+      "coordinates": [
+        1675,
+        518
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'restart'",
+      "coordinates": [
+        1757,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1742,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'program'",
+      "coordinates": [
+        1779,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1813,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'apply'",
+      "coordinates": [
+        1839,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1869,
+        515
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        532
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,669'",
+      "coordinates": [
+        369,
+        534
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '__main__'",
+      "coordinates": [
+        468,
+        533
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        531,
+        532
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Starting'",
+      "coordinates": [
+        594,
+        534
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'interactive'",
+      "coordinates": [
+        688,
+        532
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'mode.'",
+      "coordinates": [
+        768,
+        532
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'change.'",
+      "coordinates": [
+        1683,
+        539
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        551
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,679'",
+      "coordinates": [
+        369,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '_main__'",
+      "coordinates": [
+        468,
+        552
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        531,
+        551
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Press'",
+      "coordinates": [
+        580,
+        551
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: ''F9''",
+      "coordinates": [
+        630,
+        551
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        665,
+        551
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'trigger'",
+      "coordinates": [
+        715,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'a'",
+      "coordinates": [
+        761,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'screen'",
+      "coordinates": [
+        801,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'analysis'",
+      "coordinates": [
+        873,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cycle.'",
+      "coordinates": [
+        944,
+        553
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:05,679'",
+      "coordinates": [
+        369,
+        572
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '__main__'",
+      "coordinates": [
+        468,
+        571
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        531,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Press'",
+      "coordinates": [
+        580,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘ESC''",
+      "coordinates": [
+        635,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        674,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'exit.'",
+      "coordinates": [
+        714,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '='",
+      "coordinates": [
+        1532,
+        576
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Optional'",
+      "coordinates": [
+        1661,
+        571
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'additions'",
+      "coordinates": [
+        1732,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '|'",
+      "coordinates": [
+        1749,
+        569
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'can'",
+      "coordinates": [
+        1765,
+        569
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'do'",
+      "coordinates": [
+        1786,
+        570
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'now'",
+      "coordinates": [
+        1809,
+        569
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '2025-09-27'",
+      "coordinates": [
+        261,
+        589
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '17:01:08,207'",
+      "coordinates": [
+        369,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '__main__'",
+      "coordinates": [
+        468,
+        590
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'INFO'",
+      "coordinates": [
+        531,
+        589
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Starting'",
+      "coordinates": [
+        594,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'new'",
+      "coordinates": [
+        653,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'screen'",
+      "coordinates": [
+        702,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'analysis'",
+      "coordinates": [
+        774,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cycle...'",
+      "coordinates": [
+        854,
+        591
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: ']'",
+      "coordinates": [
+        216,
+        608
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '«Instead'",
+      "coordinates": [
+        1673,
+        606
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'of'",
+      "coordinates": [
+        1712,
+        604
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'proximity'",
+      "coordinates": [
+        1800,
+        607
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1785,
+        604
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'center,'",
+      "coordinates": [
+        1815,
+        604
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'choose'",
+      "coordinates": [
+        1861,
+        604
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'highest'",
+      "coordinates": [
+        1682,
+        626
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘button'",
+      "coordinates": [
+        1728,
+        625
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confidence’'",
+      "coordinates": [
+        1785,
+        625
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(if'",
+      "coordinates": [
+        1827,
+        626
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'the'",
+      "coordinates": [
+        1845,
+        625
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'analyzer'",
+      "coordinates": [
+        1685,
+        646
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'provides'",
+      "coordinates": [
+        1737,
+        646
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'scores)'",
+      "coordinates": [
+        1784,
+        646
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '—'",
+      "coordinates": [
+        1814,
+        646
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'I'",
+      "coordinates": [
+        1826,
+        645
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'can'",
+      "coordinates": [
+        1841,
+        646
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'implement'",
+      "coordinates": [
+        1692,
+        665
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'that'",
+      "coordinates": [
+        1737,
+        664
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'i'",
+      "coordinates": [
+        1757,
+        664
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘outputs'",
+      "coordinates": [
+        1749,
+        688
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'a'",
+      "coordinates": [
+        1778,
+        687
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confidence'",
+      "coordinates": [
+        1816,
+        686
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'metric'",
+      "coordinates": [
+        1869,
+        686
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'per'",
+      "coordinates": [
+        1671,
+        710
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'detected'",
+      "coordinates": [
+        1709,
+        707
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'UI'",
+      "coordinates": [
+        1743,
+        707
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'element.'",
+      "coordinates": [
+        1778,
+        707
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Add'",
+      "coordinates": [
+        1672,
+        727
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'a'",
+      "coordinates": [
+        1691,
+        728
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'simple'",
+      "coordinates": [
+        1717,
+        728
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'on-console'",
+      "coordinates": [
+        1772,
+        727
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'prompt'",
+      "coordinates": [
+        1829,
+        729
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(y/n)'",
+      "coordinates": [
+        1867,
+        729
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'in'",
+      "coordinates": [
+        1889,
+        728
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'addition'",
+      "coordinates": [
+        1684,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1718,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'F10'",
+      "coordinates": [
+        1738,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1757,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confirm'",
+      "coordinates": [
+        1789,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'execution.'",
+      "coordinates": [
+        1844,
+        746
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '*'",
+      "coordinates": [
+        1647,
+        766
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Add'",
+      "coordinates": [
+        1672,
+        766
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'a'",
+      "coordinates": [
+        1691,
+        767
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '3-second'",
+      "coordinates": [
+        1725,
+        766
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'countdowm'",
+      "coordinates": [
+        1787,
+        766
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'prior'",
+      "coordinates": [
+        1837,
+        769
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1860,
+        766
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘executing'",
+      "coordinates": [
+        1688,
+        787
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions'",
+      "coordinates": [
+        1740,
+        785
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'so'",
+      "coordinates": [
+        1771,
+        786
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'you'",
+      "coordinates": [
+        1791,
+        788
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'can'",
+      "coordinates": [
+        1815,
+        786
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'abort'",
+      "coordinates": [
+        1845,
+        785
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'by'",
+      "coordinates": [
+        1871,
+        786
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'moving'",
+      "coordinates": [
+        1683,
+        808
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'mouse'",
+      "coordinates": [
+        1727,
+        806
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1756,
+        805
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'a'",
+      "coordinates": [
+        1769,
+        806
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'comer.'",
+      "coordinates": [
+        1795,
+        806
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'toe'",
+      "coordinates": [
+        823,
+        853
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '8)'",
+      "coordinates": [
+        854,
+        852
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Which,'",
+      "coordinates": [
+        1656,
+        838
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'if'",
+      "coordinates": [
+        1683,
+        837
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'any,'",
+      "coordinates": [
+        1703,
+        836
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'would'",
+      "coordinates": [
+        1735,
+        836
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'you'",
+      "coordinates": [
+        1766,
+        840
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'like'",
+      "coordinates": [
+        1788,
+        836
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'me'",
+      "coordinates": [
+        1814,
+        838
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        1830,
+        837
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'add?'",
+      "coordinates": [
+        1854,
+        837
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '210'",
+      "coordinates": [
+        379,
+        867
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'except'",
+      "coordinates": [
+        500,
+        868
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Exception:'",
+      "coordinates": [
+        569,
+        867
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '24'",
+      "coordinates": [
+        379,
+        886
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'LOG.exception(\"Error'",
+      "coordinates": [
+        586,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'selecting'",
+      "coordinates": [
+        705,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'top'",
+      "coordinates": [
+        758,
+        889
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions;'",
+      "coordinates": [
+        808,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'falling'",
+      "coordinates": [
+        874,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'back'",
+      "coordinates": [
+        924,
+        886
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'to'",
+      "coordinates": [
+        955,
+        886
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'executing'",
+      "coordinates": [
+        1005,
+        888
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'all'",
+      "coordinates": [
+        1059,
+        886
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'parsed'",
+      "coordinates": [
+        1101,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions.”)'",
+      "coordinates": [
+        1170,
+        887
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'oe'",
+      "coordinates": [
+        1713,
+        880
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '212'",
+      "coordinates": [
+        379,
+        905
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'selected'",
+      "coordinates": [
+        539,
+        905
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '='",
+      "coordinates": [
+        582,
+        906
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'actions'",
+      "coordinates": [
+        620,
+        905
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '@'",
+      "coordinates": [
+        24,
+        938
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '214'",
+      "coordinates": [
+        379,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '#'",
+      "coordinates": [
+        481,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Ask'",
+      "coordinates": [
+        504,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'for'",
+      "coordinates": [
+        535,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'confirmation'",
+      "coordinates": [
+        601,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'if'",
+      "coordinates": [
+        662,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'required'",
+      "coordinates": [
+        708,
+        943
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘Add'",
+      "coordinates": [
+        1655,
+        949
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'context'",
+      "coordinates": [
+        1692,
+        944
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(2),'",
+      "coordinates": [
+        1726,
+        944
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'extensions'",
+      "coordinates": [
+        1783,
+        950
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '(@),'",
+      "coordinates": [
+        1817,
+        944
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'commands'",
+      "coordinates": [
+        1862,
+        949
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '215'",
+      "coordinates": [
+        379,
+        962
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ok'",
+      "coordinates": [
+        485,
+        962
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '='",
+      "coordinates": [
+        505,
+        963
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'self.wait_for_confirmation()'",
+      "coordinates": [
+        623,
+        963
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '216'",
+      "coordinates": [
+        379,
+        981
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'if'",
+      "coordinates": [
+        486,
+        981
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'not'",
+      "coordinates": [
+        512,
+        982
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'ok:'",
+      "coordinates": [
+        542,
+        981
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '‘Agent'",
+      "coordinates": [
+        1670,
+        979
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'x'",
+      "coordinates": [
+        1847,
+        978
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Py'",
+      "coordinates": [
+        1879,
+        977
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '217'",
+      "coordinates": [
+        379,
+        1000
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'cancelled'",
+      "coordinates": [
+        697,
+        1000
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'by'",
+      "coordinates": [
+        747,
+        1001
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'user.”)'",
+      "coordinates": [
+        789,
+        1001
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'x'",
+      "coordinates": [
+        17,
+        1021
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'Python'",
+      "coordinates": [
+        1779,
+        1023
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '@'",
+      "coordinates": [
+        1821,
+        1021
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: '3.137'",
+      "coordinates": [
+        1859,
+        1021
+      ]
+    },
+    {
+      "type": "text_click",
+      "description": "Click text: 'O'",
+      "coordinates": [
+        1898,
+        1021
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        71,
+        1066
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        918,
+        1059
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        776,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1227,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1139,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        30,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1095,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        694,
+        1056
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1183,
+        1055
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1051,
+        1055
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        24,
+        986
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        24,
+        938
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1766,
+        840
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1701,
+        840
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1855,
+        837
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1734,
+        837
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1661,
+        837
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1791,
+        788
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1844,
+        785
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1731,
+        766
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1673,
+        766
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1789,
+        746
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1828,
+        729
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1673,
+        727
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1773,
+        707
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1709,
+        707
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1692,
+        687
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1783,
+        646
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1736,
+        648
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1798,
+        625
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1682,
+        625
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1682,
+        606
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1661,
+        572
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1780,
+        521
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1840,
+        520
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1675,
+        518
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1671,
+        499
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1752,
+        479
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1711,
+        478
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1700,
+        446
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1682,
+        411
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1678,
+        395
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1719,
+        392
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1764,
+        395
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1792,
+        372
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1787,
+        353
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1736,
+        355
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1775,
+        353
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1794,
+        336
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1838,
+        334
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1675,
+        333
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1780,
+        316
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1672,
+        314
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        24,
+        251
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1680,
+        206
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        24,
+        203
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1857,
+        185
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1821,
+        186
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1832,
+        166
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1760,
+        168
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1709,
+        166
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1671,
+        166
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1872,
+        166
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1821,
+        166
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1824,
+        146
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1856,
+        107
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1742,
+        107
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        24,
+        107
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1801,
+        90
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        1686,
+        87
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        23,
+        59
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        377,
+        19
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        271,
+        17
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        89,
+        17
+      ]
+    },
+    {
+      "type": "button_click",
+      "description": "Click button",
+      "coordinates": [
+        198,
+        17
+      ]
+    }
+  ],
+  "summary": "Screen resolution: 1920x1080. Detected elements: 406 text blocks, 75 buttons, 1 windows. Found 481 potential interaction points."
+}
