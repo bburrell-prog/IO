@@ -984,3 +984,432 @@ Traceback (most recent call last):
   File "C:\Users\Brody Burrell\Desktop\py\.venv\Lib\site-packages\requests\models.py", line 1021, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.openai.com/v1/chat/completions
+2025-11-07 13:26:59,637 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:26:59,637 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:26:59,637 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:26:59,637 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:26:59,638 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:26:59,638 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:26:59,638 main_application INFO Capturing screenshot...
+2025-11-07 13:27:02,607 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_132659.png
+2025-11-07 13:27:02,608 main_application INFO Analyzing screen content...
+2025-11-07 13:27:02,715 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:27:02,718 _screen_analyzer_original ERROR Error analyzing screen: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:27:02,721 main_application ERROR An error occurred during the analysis cycle: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 50, in run_analysis_cycle
+    analysis_report = self.screen_analyzer.analyze_screen(screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:27:28,162 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:27:28,162 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:27:28,162 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:27:28,162 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:27:28,162 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:27:28,162 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:27:28,162 main_application INFO Capturing screenshot...
+2025-11-07 13:27:31,078 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_132728.png
+2025-11-07 13:27:31,079 main_application INFO Analyzing screen content...
+2025-11-07 13:27:31,186 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:27:31,189 _screen_analyzer_original ERROR Error analyzing screen: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:27:31,192 main_application ERROR An error occurred during the analysis cycle: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 50, in run_analysis_cycle
+    analysis_report = self.screen_analyzer.analyze_screen(screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:33:45,030 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:33:45,030 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:33:45,030 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:33:45,030 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:33:45,030 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:33:45,030 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:33:45,030 main_application INFO Capturing screenshot...
+2025-11-07 13:33:48,012 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_133345.png
+2025-11-07 13:33:48,012 main_application INFO Analyzing screen content...
+2025-11-07 13:33:48,120 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:33:48,123 _screen_analyzer_original ERROR Error analyzing screen: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:33:48,126 main_application ERROR An error occurred during the analysis cycle: tesseract is not installed or it's not in your PATH. See README file for more information.
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 388, in get_tesseract_version
+    output = subprocess.check_output(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1821, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 50, in run_analysis_cycle
+    analysis_report = self.screen_analyzer.analyze_screen(screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 56, in analyze_screen
+    text_elements = self._extract_text_with_ocr(gray_image)
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 81, in _extract_text_with_ocr
+    ocr_data = pytesseract.image_to_data(image, output_type=Output.DICT, config=self.config.get_tesseract_config()['config'])
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 521, in image_to_data
+    if get_tesseract_version() < TESSERACT_MIN_VERSION:
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 146, in wrapper
+    wrapper._result = func(*args, **kwargs)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pytesseract/pytesseract.py", line 395, in get_tesseract_version
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-07 13:35:28,281 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:35:28,281 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:35:28,281 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:35:28,281 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:35:28,281 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:35:28,281 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:35:28,281 main_application INFO Capturing screenshot...
+2025-11-07 13:35:31,221 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_133528.png
+2025-11-07 13:35:31,221 main_application INFO Analyzing screen content...
+2025-11-07 13:35:31,332 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:35:36,257 _screen_analyzer_original INFO Found 233 text elements.
+2025-11-07 13:35:36,257 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 13:35:36,277 _screen_analyzer_original INFO Detected 276 potential buttons and 13 potential windows.
+2025-11-07 13:35:36,284 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_133536.json
+2025-11-07 13:35:36,284 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 13:35:36,285 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 13:36:36,383 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.08s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-11-07 13:39:58,677 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:39:58,677 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:39:58,677 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:39:58,678 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:39:58,678 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:39:58,678 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:39:58,678 main_application INFO Capturing screenshot...
+2025-11-07 13:40:01,611 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_133958.png
+2025-11-07 13:40:01,612 main_application INFO Analyzing screen content...
+2025-11-07 13:40:01,721 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:40:04,464 _screen_analyzer_original INFO Found 227 text elements.
+2025-11-07 13:40:04,464 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 13:40:04,485 _screen_analyzer_original INFO Detected 275 potential buttons and 13 potential windows.
+2025-11-07 13:40:04,492 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_134004.json
+2025-11-07 13:40:04,492 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 13:40:04,493 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 13:41:04,593 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.00s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-11-07 13:42:06,939 chatgpt_client WARNING Network error on API request. Retry 2/5 after 2.00s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-11-07 13:43:09,062 chatgpt_client WARNING Network error on API request. Retry 3/5 after 4.02s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-11-07 13:45:51,252 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:45:51,252 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:45:51,252 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:45:51,252 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:45:51,252 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:45:51,252 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:45:51,252 main_application INFO Capturing screenshot...
+2025-11-07 13:45:54,119 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_134551.png
+2025-11-07 13:45:54,119 main_application INFO Analyzing screen content...
+2025-11-07 13:45:54,228 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:45:56,570 _screen_analyzer_original INFO Found 192 text elements.
+2025-11-07 13:45:56,571 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 13:45:56,592 _screen_analyzer_original INFO Detected 293 potential buttons and 16 potential windows.
+2025-11-07 13:45:56,599 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_134556.json
+2025-11-07 13:45:56,599 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 13:45:56,600 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 13:48:23,507 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:48:23,508 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:48:23,508 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4-turbo-preview
+2025-11-07 13:48:23,508 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:48:23,508 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:48:23,508 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:48:23,508 main_application INFO Capturing screenshot...
+2025-11-07 13:48:26,375 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_134823.png
+2025-11-07 13:48:26,375 main_application INFO Analyzing screen content...
+2025-11-07 13:48:26,485 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:48:28,852 _screen_analyzer_original INFO Found 187 text elements.
+2025-11-07 13:48:28,852 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 13:48:28,872 _screen_analyzer_original INFO Detected 252 potential buttons and 16 potential windows.
+2025-11-07 13:48:28,878 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_134828.json
+2025-11-07 13:48:28,878 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 13:48:28,879 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 13:49:28,955 chatgpt_client WARNING Network error on API request. Retry 1/5 after 1.17s: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=60)
+2025-11-07 13:56:34,294 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:56:34,294 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:56:34,294 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 13:56:34,294 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:56:34,294 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:56:34,294 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:56:34,294 main_application INFO Capturing screenshot...
+2025-11-07 13:56:37,252 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_135634.png
+2025-11-07 13:56:37,253 main_application INFO Analyzing screen content...
+2025-11-07 13:56:37,361 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 13:56:39,810 _screen_analyzer_original INFO Found 208 text elements.
+2025-11-07 13:56:39,810 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 13:56:39,831 _screen_analyzer_original INFO Detected 266 potential buttons and 15 potential windows.
+2025-11-07 13:56:39,838 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_135639.json
+2025-11-07 13:56:39,838 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 13:56:39,838 main_application ERROR An error occurred during the analysis cycle: get_actions_from_report() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+TypeError: get_actions_from_report() takes 2 positional arguments but 3 were given
+2025-11-07 13:58:33,884 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 13:58:33,884 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 13:58:33,885 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 13:58:33,885 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 13:58:33,885 main_application INFO Desktop Analyzer initialized.
+2025-11-07 13:58:33,885 main_application INFO Starting new screen analysis cycle...
+2025-11-07 13:58:33,885 main_application INFO Capturing screenshot...
+2025-11-07 13:58:33,974 _screen_analyzer_original ERROR Error capturing screenshot: cannot identify image file '/var/folders/kt/d3807n616k1gd19343v2n3s40000gn/T/tmpmj2zk9gk.png'
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 36, in capture_screenshot
+    screenshot = pyautogui.screenshot()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pyscreeze/__init__.py", line 582, in _screenshot_osx
+    im = ImageGrab.grab()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/PIL/ImageGrab.py", line 38, in grab
+    im = Image.open(filepath)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/PIL/Image.py", line 3280, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/var/folders/kt/d3807n616k1gd19343v2n3s40000gn/T/tmpmj2zk9gk.png'
+2025-11-07 13:58:33,978 main_application ERROR An error occurred during the analysis cycle: cannot identify image file '/var/folders/kt/d3807n616k1gd19343v2n3s40000gn/T/tmpmj2zk9gk.png'
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 47, in run_analysis_cycle
+    screenshot_path = self.screen_analyzer.capture_screenshot()
+  File "/Users/bburrell/Desktop/IO/py/Screen Analyzer Module.py", line 36, in capture_screenshot
+    screenshot = pyautogui.screenshot()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/pyscreeze/__init__.py", line 582, in _screenshot_osx
+    im = ImageGrab.grab()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/PIL/ImageGrab.py", line 38, in grab
+    im = Image.open(filepath)
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/PIL/Image.py", line 3280, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file '/var/folders/kt/d3807n616k1gd19343v2n3s40000gn/T/tmpmj2zk9gk.png'
+2025-11-07 14:01:47,612 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:01:47,613 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:01:47,613 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:01:47,613 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:01:47,613 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:01:47,613 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:01:47,613 main_application INFO Capturing screenshot...
+2025-11-07 14:01:50,500 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_140147.png
+2025-11-07 14:01:50,500 main_application INFO Analyzing screen content...
+2025-11-07 14:01:50,608 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:01:53,632 _screen_analyzer_original INFO Found 266 text elements.
+2025-11-07 14:01:53,632 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:01:53,657 _screen_analyzer_original INFO Detected 305 potential buttons and 15 potential windows.
+2025-11-07 14:01:53,665 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_140153.json
+2025-11-07 14:01:53,665 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:01:53,680 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:01:53,681 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:02:24,525 main_application INFO Received response from ChatGPT.
+2025-11-07 14:02:24,528 action_executor INFO Parsed 0 actions from response.
+2025-11-07 14:02:24,529 action_executor WARNING No valid actions found in the response.
+2025-11-07 14:02:57,597 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:02:57,598 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:02:57,598 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:02:57,598 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:02:57,598 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:02:57,598 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:02:57,598 main_application INFO Capturing screenshot...
+2025-11-07 14:03:00,436 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_140257.png
+2025-11-07 14:03:00,437 main_application INFO Analyzing screen content...
+2025-11-07 14:03:00,548 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:03:03,433 _screen_analyzer_original INFO Found 304 text elements.
+2025-11-07 14:03:03,434 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:03:03,457 _screen_analyzer_original INFO Detected 302 potential buttons and 15 potential windows.
+2025-11-07 14:03:03,466 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_140303.json
+2025-11-07 14:03:03,466 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:03:03,481 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:03:03,482 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:03:30,468 main_application INFO Received response from ChatGPT.
+2025-11-07 14:03:30,470 action_executor INFO Parsed 1 actions from response.
+2025-11-07 14:03:30,470 action_executor INFO Execution mode chosen: click
+2025-11-07 14:03:30,471 action_executor INFO Selected 1 action(s) to execute based on proximity to center.
+2025-11-07 14:03:30,471 action_executor INFO Selected action 1: {'type': 'click', 'x': 622, 'y': 135}
+2025-11-07 14:03:30,471 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-11-07 14:07:42,911 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:07:42,911 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:07:42,911 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:07:42,911 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:07:42,911 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:07:42,911 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:07:42,911 main_application INFO Capturing screenshot...
+2025-11-07 14:07:45,830 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_140742.png
+2025-11-07 14:07:45,831 main_application INFO Analyzing screen content...
+2025-11-07 14:07:45,940 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:07:48,291 _screen_analyzer_original INFO Found 180 text elements.
+2025-11-07 14:07:48,291 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:07:48,311 _screen_analyzer_original INFO Detected 252 potential buttons and 15 potential windows.
+2025-11-07 14:07:48,317 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_140748.json
+2025-11-07 14:07:48,317 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:07:48,331 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:07:48,332 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:08:06,336 main_application INFO Received response from ChatGPT.
+2025-11-07 14:08:06,338 action_executor INFO Parsed 0 actions from response.
+2025-11-07 14:08:06,338 action_executor WARNING No valid actions found in the response.
+2025-11-07 14:13:38,672 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:13:38,672 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:13:38,673 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:13:38,673 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:13:38,673 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:13:38,673 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:13:38,673 main_application INFO Capturing screenshot...
+2025-11-07 14:13:41,631 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_141338.png
+2025-11-07 14:13:41,631 main_application INFO Analyzing screen content...
+2025-11-07 14:13:41,743 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:13:44,017 _screen_analyzer_original INFO Found 171 text elements.
+2025-11-07 14:13:44,017 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:13:44,037 _screen_analyzer_original INFO Detected 257 potential buttons and 15 potential windows.
+2025-11-07 14:13:44,043 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_141344.json
+2025-11-07 14:13:44,043 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:13:44,057 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:13:44,057 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:14:10,691 main_application INFO Received response from ChatGPT.
+2025-11-07 14:14:10,695 action_executor INFO Parsed 6 actions from response.
+2025-11-07 14:14:10,695 action_executor INFO Execution mode chosen: type
+2025-11-07 14:14:10,705 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-11-07 14:15:33,708 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:15:33,708 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:15:33,708 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:15:33,709 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:15:33,709 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:15:33,709 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:15:33,709 main_application INFO Capturing screenshot...
+2025-11-07 14:15:36,510 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_141533.png
+2025-11-07 14:15:36,510 main_application INFO Analyzing screen content...
+2025-11-07 14:15:36,606 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:15:38,681 _screen_analyzer_original INFO Found 166 text elements.
+2025-11-07 14:15:38,681 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:15:38,698 _screen_analyzer_original INFO Detected 290 potential buttons and 15 potential windows.
+2025-11-07 14:15:38,704 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_141538.json
+2025-11-07 14:15:38,704 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:15:38,718 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:15:38,718 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:16:03,116 main_application INFO Received response from ChatGPT.
+2025-11-07 14:16:03,118 action_executor INFO Parsed 2 actions from response.
+2025-11-07 14:16:03,119 action_executor INFO Execution mode chosen: type
+2025-11-07 14:16:03,126 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.

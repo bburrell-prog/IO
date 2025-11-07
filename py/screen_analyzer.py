@@ -96,6 +96,10 @@ else:
                 raise RuntimeError("No vision processor available to analyze screenshots")
             return {"cv_analysis": self._cv.process_image(screenshot_path)}
 
+        def analyze_screen(self, screenshot_path: str) -> Dict[str, Any]:
+            """Alias for analyze_screenshot for compatibility."""
+            return self.analyze_screenshot(screenshot_path)
+
         def capture_screenshot(self) -> str:
             """Capture a screenshot to the screenshots/ folder and return its path.
 

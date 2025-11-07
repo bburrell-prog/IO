@@ -33,8 +33,31 @@ class ScreenAnalyzer:
             
             # Temporarily disable failsafe for capture
             pyautogui.FAILSAFE = False
-            screenshot = pyautogui.screenshot()
-            screenshot.save(filepath)
+            
+            # Try macOS-specific screenshot method first
+            import platform
+            if platform.system() == 'Darwin':  # macOS
+                import subprocess
+                import tempfile
+                with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as tmp_file:
+                    temp_path = tmp_file.name
+                
+                # Use macOS screencapture command
+                subprocess.run(['screencapture', '-x', temp_path], check=True)
+                
+                # Load the image with PIL
+                from PIL import Image
+                screenshot = Image.open(temp_path)
+                screenshot.save(filepath)
+                
+                # Clean up temp file
+                import os
+                os.unlink(temp_path)
+            else:
+                # Use PyAutoGUI for other platforms
+                screenshot = pyautogui.screenshot()
+                screenshot.save(filepath)
+            
             pyautogui.FAILSAFE = True
             
             logger.info(f"Screenshot saved to: {filepath}")

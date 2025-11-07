@@ -55,7 +55,7 @@ class DesktopAnalyzer:
 
             # 3. Get insights from ChatGPT
             logger.info("Sending analysis to ChatGPT for action generation...")
-            chatgpt_response = self.chatgpt_client.send_analysis(analysis_report)
+            chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
 
             if chatgpt_response:
                 logger.info("Received response from ChatGPT.")

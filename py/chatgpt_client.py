@@ -15,6 +15,7 @@ from __future__ import annotations
 import os
 import time
 import random
+import json
 import logging
 from typing import Any, Dict
 
@@ -35,7 +36,7 @@ LOG = logging.getLogger(__name__)
 OPENAI_API_URL = os.getenv("OPENAI_API_URL", "https://api.openai.com/v1/chat/completions")
 
 class ChatGPTClient:
-    def __init__(self, model: str = "gpt-4-turbo-preview", api_key: str | None = None, max_retries: int = 5):
+    def __init__(self, model: str = "gpt-4o", api_key: str | None = None, max_retries: int = 5):
         if requests is None:
             raise RuntimeError("requests library is required for ChatGPTClient")
 
@@ -47,7 +48,7 @@ class ChatGPTClient:
             inferred_api_key = model
             LOG.warning("Detected API key passed as first positional argument; treating first arg as api_key and using default model.")
 
-        self.model = model if inferred_api_key is None else (api_key or os.getenv("DEFAULT_MODEL", "gpt-4-turbo-preview"))
+        self.model = model if inferred_api_key is None else (api_key or os.getenv("DEFAULT_MODEL", "gpt-4o"))
         self.api_key = api_key or inferred_api_key or os.getenv("OPENAI_API_KEY")
 
         if not self.api_key:
@@ -103,21 +104,42 @@ class ChatGPTClient:
                 LOG.exception("API request failed permanently: %s", e)
                 raise
 
-    def get_actions_from_report(self, report: Dict[str, Any]) -> str:
-        """Send a structured screen analysis report to ChatGPT and return the assistant's text.
-
-        `report` should be serializable (dict). This method builds a prompt that asks
-        the model to propose a list of actions and returns the assistant content.
-        """
-        # Build messages: system + user
+    def get_actions_from_report(self, report: Dict[str, Any], screenshot_path: str | None = None) -> str:
+        """Get action recommendations from ChatGPT, optionally with vision analysis."""
         system = {
             "role": "system",
-            "content": (
-                "You are an assistant that converts a screen analysis JSON into a concise list of UI actions. "
-                "Return only plain-text actions in lines such as: 'CLICK button at coordinates [x, y]'."
-            ),
+            "content": "You are a desktop automation assistant. Analyze the screen content and suggest specific actions the user might want to take. Focus on practical, actionable suggestions like clicking buttons, typing text, or navigating menus. Be specific about coordinates when suggesting clicks."
         }
-        user = {"role": "user", "content": f"Screen analysis JSON:\n{report}"}
+
+        # Prepare content array for multimodal input
+        content = []
+
+        # Add text analysis first
+        content.append({
+            "type": "text",
+            "text": f"Screen analysis data:\n{json.dumps(report, indent=2)}\n\nPlease analyze this screen and suggest specific actions the user could take."
+        })
+
+        # Add screenshot if provided (for vision analysis)
+        if screenshot_path and os.path.exists(screenshot_path):
+            try:
+                import base64
+                with open(screenshot_path, "rb") as image_file:
+                    image_data = base64.b64encode(image_file.read()).decode('utf-8')
+
+                content.append({
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/png;base64,{image_data}",
+                        "detail": "high"
+                    }
+                })
+
+                LOG.info("Including screenshot in vision analysis request")
+            except Exception as e:
+                LOG.warning("Failed to include screenshot in request: %s", e)
+
+        user = {"role": "user", "content": content}
 
         LOG.info("Sending request to OpenAI API...")
         resp = self._make_api_request([system, user])
