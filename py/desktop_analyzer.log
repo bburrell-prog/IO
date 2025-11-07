@@ -1413,3 +1413,79 @@ PIL.UnidentifiedImageError: cannot identify image file '/var/folders/kt/d3807n61
 2025-11-07 14:16:03,118 action_executor INFO Parsed 2 actions from response.
 2025-11-07 14:16:03,119 action_executor INFO Execution mode chosen: type
 2025-11-07 14:16:03,126 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-11-07 14:38:08,837 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:38:08,837 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:38:08,837 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:38:08,837 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:38:08,837 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:38:08,837 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:38:08,837 main_application INFO Capturing screenshot...
+2025-11-07 14:38:11,439 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_143808.png
+2025-11-07 14:38:11,439 main_application INFO Analyzing screen content...
+2025-11-07 14:38:11,541 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:38:13,810 _screen_analyzer_original INFO Found 209 text elements.
+2025-11-07 14:38:13,810 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:38:13,830 _screen_analyzer_original INFO Detected 271 potential buttons and 15 potential windows.
+2025-11-07 14:38:13,836 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_143813.json
+2025-11-07 14:38:13,836 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:38:13,849 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:38:13,849 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:38:14,457 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 84, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-07 14:38:14,469 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 58, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 145, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 84, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-07 14:46:23,262 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:46:23,262 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:46:23,262 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:46:23,262 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:46:23,262 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:46:23,262 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:46:23,262 main_application INFO Capturing screenshot...
+2025-11-07 14:46:26,243 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_144623.png
+2025-11-07 14:46:26,243 main_application INFO Analyzing screen content...
+2025-11-07 14:46:26,351 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:46:28,476 _screen_analyzer_original INFO Found 159 text elements.
+2025-11-07 14:46:28,476 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-07 14:46:28,494 _screen_analyzer_original INFO Detected 217 potential buttons and 14 potential windows.
+2025-11-07 14:46:28,501 main_application INFO Analysis report saved to: reports/screen_analysis_20251107_144628.json
+2025-11-07 14:46:28,501 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-07 14:46:28,514 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-07 14:46:28,515 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-07 14:46:40,215 main_application INFO Received response from ChatGPT.
+2025-11-07 14:46:40,218 action_executor INFO Parsed 7 actions from response.
+2025-11-07 14:46:40,218 action_executor INFO Execution mode chosen: type
+2025-11-07 14:46:40,224 action_executor INFO Waiting for confirmation: press F10 to execute, or esc to cancel.
+2025-11-07 14:48:53,825 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:48:53,826 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:48:53,826 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:48:53,826 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:48:53,826 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:48:53,826 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:48:53,826 main_application INFO Capturing screenshot...
+2025-11-07 14:48:56,817 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_144853.png
+2025-11-07 14:48:56,817 main_application INFO Analyzing screen content...
+2025-11-07 14:48:56,927 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-07 14:50:08,480 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-07 14:50:08,480 chatgpt_client WARNING Detected API key passed as first positional argument; treating first arg as api_key and using default model.
+2025-11-07 14:50:08,480 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-07 14:50:08,480 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-07 14:50:08,480 main_application INFO Desktop Analyzer initialized.
+2025-11-07 14:50:08,480 main_application INFO Starting new screen analysis cycle...
+2025-11-07 14:50:08,480 main_application INFO Capturing screenshot...
+2025-11-07 14:50:11,317 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251107_145008.png
+2025-11-07 14:50:11,318 main_application INFO Analyzing screen content...
+2025-11-07 14:50:11,426 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
