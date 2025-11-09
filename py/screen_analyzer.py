@@ -11,6 +11,8 @@ import importlib.util
 import pathlib
 import sys
 from typing import Any, Dict
+import cv2
+import numpy as np
 
 # Import the new universal vision processor
 try:
@@ -54,27 +56,59 @@ if orig_loaded:
             self._cv = UniversalVisionProcessor() if UniversalVisionProcessor is not None else None
 
         def analyze_screenshot(self, screenshot_path: str) -> Dict[str, Any]:
-            # call original analyzer
-            base = {}
+            import logging
+            logging.info("Wrapped ScreenAnalyzer.analyze_screenshot start: %s", screenshot_path)
+
+            # prepare base/result variables
+            base: Dict[str, Any] = {}
+            result: Dict[str, Any] = {}
+
             try:
-                base = self._orig.analyze_screenshot(screenshot_path) or {}
-            except Exception:
-                import logging
-                logging.exception("Original ScreenAnalyzer.analyze_screenshot failed; falling back to CV-only processing.")
-
-            # call new vision processor and merge
-            if self._cv is not None:
+                # call original analyzer (errors are logged but do not stop flow)
                 try:
-                    cv_out = self._cv.process_image(screenshot_path) or {}
-                    merged = dict(base)
-                    merged.setdefault("cv_analysis", {})
-                    merged["cv_analysis"].update(cv_out)
-                    return merged
+                    base = self._orig.analyze_screenshot(screenshot_path) or {}
                 except Exception:
-                    logging.exception("VisionProcessor failed while analyzing %s", screenshot_path)
-                    return base
+                    logging.exception("Original ScreenAnalyzer.analyze_screenshot failed; falling back to CV-only processing.")
 
-            return base
+                # call new vision processor and merge
+                result = dict(base)
+                if self._cv is not None:
+                    try:
+                        cv_out = self._cv.process_image(screenshot_path) or {}
+                        result.setdefault("cv_analysis", {})
+                        result["cv_analysis"].update(cv_out)
+                    except Exception:
+                        logging.exception("VisionProcessor failed while analyzing %s", screenshot_path)
+                        result = dict(base)
+            finally:
+                # Compute and display HSV statistics regardless of earlier errors
+                try:
+                    logging.info("Computing HSV stats for %s", screenshot_path)
+                    img = cv2.imread(screenshot_path)
+                    if img is not None:
+                        logging.info("Image loaded successfully, computing HSV...")
+                        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+                        h, s, v = cv2.split(hsv)
+                        mean_h = np.mean(h)
+                        mean_s = np.mean(s)
+                        mean_v = np.mean(v)
+                        std_h = np.std(h)
+                        std_s = np.std(s)
+                        std_v = np.std(v)
+                        stats_img = np.zeros((200, 400, 3), dtype=np.uint8)
+                        cv2.putText(stats_img, f"Hue: mean={mean_h:.2f}, std={std_h:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        cv2.putText(stats_img, f"Sat: mean={mean_s:.2f}, std={std_s:.2f}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        cv2.putText(stats_img, f"Val: mean={mean_v:.2f}, std={std_v:.2f}", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        logging.info("Displaying HSV statistics window...")
+                        cv2.imshow("HSV Statistics", stats_img)
+                        cv2.waitKey(2000)
+                        cv2.destroyAllWindows()
+                    else:
+                        logging.warning("Failed to load image from %s", screenshot_path)
+                except Exception:
+                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
+
+            return result
 
         def __getattr__(self, name: str):
             """Proxy any unknown attribute access to the original analyzer instance.
@@ -92,9 +126,44 @@ else:
             self._cv = UniversalVisionProcessor() if UniversalVisionProcessor is not None else None
 
         def analyze_screenshot(self, screenshot_path: str) -> Dict[str, Any]:
-            if self._cv is None:
-                raise RuntimeError("No vision processor available to analyze screenshots")
-            return {"cv_analysis": self._cv.process_image(screenshot_path)}
+            import logging
+            logging.info("Fallback analyze_screenshot start: %s", screenshot_path)
+
+            result: Dict[str, Any] = {}
+            try:
+                if self._cv is None:
+                    # Keep raising as before, but ensure HSV stats run in finally
+                    raise RuntimeError("No vision processor available to analyze screenshots")
+                result = {"cv_analysis": self._cv.process_image(screenshot_path)}
+            finally:
+                # Compute and display HSV statistics regardless of earlier errors
+                try:
+                    logging.info("Computing HSV stats for %s", screenshot_path)
+                    img = cv2.imread(screenshot_path)
+                    if img is not None:
+                        logging.info("Image loaded successfully, computing HSV...")
+                        hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+                        h, s, v = cv2.split(hsv)
+                        mean_h = np.mean(h)
+                        mean_s = np.mean(s)
+                        mean_v = np.mean(v)
+                        std_h = np.std(h)
+                        std_s = np.std(s)
+                        std_v = np.std(v)
+                        stats_img = np.zeros((200, 400, 3), dtype=np.uint8)
+                        cv2.putText(stats_img, f"Hue: mean={mean_h:.2f}, std={std_h:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        cv2.putText(stats_img, f"Sat: mean={mean_s:.2f}, std={std_s:.2f}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        cv2.putText(stats_img, f"Val: mean={mean_v:.2f}, std={std_v:.2f}", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
+                        logging.info("Displaying HSV statistics window...")
+                        cv2.imshow("HSV Statistics", stats_img)
+                        cv2.waitKey(2000)
+                        cv2.destroyAllWindows()
+                    else:
+                        logging.warning("Failed to load image from %s", screenshot_path)
+                except Exception:
+                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
+
+            return result
 
         def analyze_screen(self, screenshot_path: str) -> Dict[str, Any]:
             """Alias for analyze_screenshot for compatibility."""
