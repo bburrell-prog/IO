@@ -43,7 +43,10 @@ echo ""
 echo "2. Interactive mode (requires sudo on macOS)"
 echo "   sudo ./venv/bin/python3 main.py"
 echo ""
-read -p "Enter choice (1 or 2): " choice
+echo "3. Analysis + Data Viewer (shows results automatically)"
+echo "   python3 main.py --once && python3 main.py --viewer"
+echo ""
+read -p "Enter choice (1, 2, or 3): " choice
 
 case $choice in
     1)
@@ -57,8 +60,46 @@ case $choice in
         echo "Press F9 to analyze screen, ESC to exit"
         sudo ./venv/bin/python3 main.py
         ;;
+    3)
+        echo ""
+        echo "Running analysis with data viewer..."
+        python3 main.py --once
+        
+        echo ""
+        echo -e "${GREEN}📊 Launching data viewer...${NC}"
+        python3 main.py --viewer &
+        VIEWER_PID=$!
+        
+        # Wait a moment for the server to start
+        sleep 2
+        
+        echo ""
+        echo -e "${GREEN}📈 Analysis Results:${NC}"
+        echo "=========================================="
+        
+        # Get and display the stats
+        if command -v jq &> /dev/null; then
+            curl -s "http://localhost:5000/api/stats" | jq .total_cycles
+        else
+            curl -s "http://localhost:5000/api/stats" | python3 -c "
+import sys, json
+try:
+    data = json.load(sys.stdin)
+    print(f'Total Cycles: {data.get(\"total_cycles\", \"N/A\")}')
+except:
+    print('Could not parse API response')
+"
+        fi
+        
+        echo ""
+        echo -e "${YELLOW}🌐 Data viewer running at: http://localhost:5000${NC}"
+        echo "Press Ctrl+C to stop the viewer"
+        
+        # Wait for the viewer process
+        wait $VIEWER_PID
+        ;;
     *)
-        echo "Invalid choice. Please run again and select 1 or 2."
+        echo "Invalid choice. Please run again and select 1, 2, or 3."
         exit 1
         ;;
 esac

@@ -357,6 +357,7 @@ class DataViewer:
                                     <div class="action-links">
                                         ${cycle.screenshot_path ? `<a href="/api/screenshot/${cycle.cycle_id}" target="_blank">View Screenshot</a>` : ''}
                                         ${cycle.report_path ? `<a href="/api/report/${cycle.cycle_id}" target="_blank">View Report</a>` : ''}
+                                        ${cycle.chatgpt_response ? `<a href="/api/ai_overview/${cycle.cycle_id}" target="_blank">View AI Overview</a>` : ''}
                                     </div>
                                 </div>
                             `;
@@ -415,6 +416,92 @@ class DataViewer:
                     filename = Path(cycle.report_path).name
                     return send_from_directory(directory, filename)
                 return jsonify({'error': 'Report not found'}), 404
+
+            @app.route('/api/ai_overview/<int:cycle_id>')
+            def get_ai_overview(cycle_id):
+                cycle = self.data_container.get_cycle(cycle_id)
+                if not cycle:
+                    return f"<h1>Error</h1><p>Cycle {cycle_id} not found.</p>", 404
+
+                if not cycle.chatgpt_response:
+                    return f"<h1>No AI Overview Available</h1><p>Cycle {cycle_id} does not have an AI response.</p>", 404
+
+                # Format processing time
+                processing_time_display = f"{cycle.processing_time:.2f}s" if cycle.processing_time else "N/A"
+
+                # Create a simple HTML page with the AI overview
+                html_content = f"""
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>AI Overview - Cycle {cycle_id}</title>
+                    <style>
+                        body {{
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                            margin: 20px;
+                            background: #f5f5f5;
+                        }}
+                        .container {{
+                            max-width: 800px;
+                            margin: 0 auto;
+                            background: white;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                            padding: 20px;
+                        }}
+                        .header {{
+                            border-bottom: 1px solid #dee2e6;
+                            padding-bottom: 15px;
+                            margin-bottom: 20px;
+                        }}
+                        .title {{
+                            color: #2c3e50;
+                            margin: 0;
+                        }}
+                        .meta {{
+                            color: #6c757d;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }}
+                        .content {{
+                            line-height: 1.6;
+                            white-space: pre-wrap;
+                            background: #f8f9fa;
+                            padding: 15px;
+                            border-radius: 6px;
+                            border-left: 4px solid #007bff;
+                        }}
+                        .back-link {{
+                            display: inline-block;
+                            margin-top: 20px;
+                            color: #007bff;
+                            text-decoration: none;
+                        }}
+                        .back-link:hover {{
+                            text-decoration: underline;
+                        }}
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="header">
+                            <h1 class="title">AI Overview - Cycle {cycle_id}</h1>
+                            <div class="meta">
+                                Timestamp: {cycle.timestamp}<br>
+                                Processing Time: {processing_time_display}
+                            </div>
+                        </div>
+                        <div class="content">
+                            {cycle.chatgpt_response}
+                        </div>
+                        <a href="javascript:history.back()" class="back-link">← Back to Viewer</a>
+                    </div>
+                </body>
+                </html>
+                """
+                return html_content
 
             # Start the server
             port = 5000

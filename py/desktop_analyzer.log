@@ -2318,3 +2318,126 @@ requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://a
 2025-11-08 20:22:43,686 main_application INFO Cycle data saved to database.
 2025-11-08 20:22:43,773 data_container INFO Added cycle 4 to data container
 2025-11-08 20:22:43,773 main_application INFO Cycle data saved to data container.
+2025-11-08 20:25:10,707 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:25:10,707 data_viewer INFO Data Viewer initialized
+2025-11-08 20:25:10,766 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:25:10,780 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:25:10,780 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:25:12,725 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:12] "GET / HTTP/1.1" 200 -
+2025-11-08 20:25:12,910 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:12] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:25:13,013 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:13] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:25:28,516 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:28] "GET /api/screenshot/4 HTTP/1.1" 200 -
+2025-11-08 20:25:33,228 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:33] "GET /api/report/4 HTTP/1.1" 200 -
+2025-11-08 20:25:42,915 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:42] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:25:42,929 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:25:42] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:26:12,940 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:26:12] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:26:12,954 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:26:12] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:26:42,916 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:26:42] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:26:42,930 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:26:42] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:27:12,913 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:27:12] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:27:12,931 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:27:12] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:27:42,918 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:27:42] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:27:42,932 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:27:42] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:28:12,916 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:12] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:28:12,929 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:12] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:28:39,477 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:28:39,477 data_viewer INFO Data Viewer initialized
+2025-11-08 20:28:39,534 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:28:42,925 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:42] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:28:42,945 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:42] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:28:55,121 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:28:55,121 data_viewer INFO Data Viewer initialized
+2025-11-08 20:28:55,177 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:28:55,184 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:28:55,184 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:28:56,582 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:56] "GET / HTTP/1.1" 200 -
+2025-11-08 20:28:56,611 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:28:56,636 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:28:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:30:54,623 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:30:54,623 data_viewer INFO Data Viewer initialized
+2025-11-08 20:30:54,681 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:30:54,688 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:30:54,688 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:30:55,903 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:30:55] "GET / HTTP/1.1" 200 -
+2025-11-08 20:30:55,936 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:30:55] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:30:55,944 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:30:55] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:30:57,291 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:30:57] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:30:57,305 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:30:57] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:31:01,770 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:01] "[36mGET /api/report/4 HTTP/1.1[0m" 304 -
+2025-11-08 20:31:26,304 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:31:26,318 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:31:26,319 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:31:26,339 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:31:27,296 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:27] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:31:27,314 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:27] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:31:56,295 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:31:56,317 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:31:57,294 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:57] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:31:57,306 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:31:57] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:32:26,388 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:32:26,411 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:32:26,560 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:32:26,580 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:32:27,298 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:27] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:32:27,311 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:27] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:32:56,297 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:32:56,309 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:32:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:33:26,307 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:33:26,320 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:33:26,321 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:33:26,332 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:33:26,332 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:33:26,353 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:33:56,300 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:33:56,317 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:33:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:34:26,300 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:34:26,310 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:34:26,319 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:34:26,321 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:34:26,322 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:34:26,336 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:34:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:35:26,317 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:35:26,331 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:35:26,332 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:35:26,342 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:35:26,343 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:35:26,357 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:35:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:36:26,297 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:36:26,312 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:36:26,313 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:36:26,323 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:36:26,324 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:36:26,340 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:36:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:37:26,303 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:37:26,317 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:37:26,317 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:37:26,327 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:37:26,330 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:37:26,335 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:37:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:38:26,295 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:38:26,307 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:38:26,307 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:38:26,318 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:38:26,327 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:38:26,329 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:38:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:39:26,351 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:39:26,364 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:39:26,375 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:39:26,377 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:39:26,383 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:39:26,389 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:39:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:40:49,699 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:40:49,714 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:40:49,722 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:40:49,722 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:40:49,741 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:40:49,751 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
