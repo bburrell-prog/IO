@@ -2441,3 +2441,93 @@ requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://a
 2025-11-08 20:40:49,722 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
 2025-11-08 20:40:49,741 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
 2025-11-08 20:40:49,751 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:40:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:24,028 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:52:24,029 data_viewer INFO Data Viewer initialized
+2025-11-08 20:52:24,372 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:52:24,388 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:52:24,388 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:52:25,871 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:25] "GET / HTTP/1.1" 200 -
+2025-11-08 20:52:26,121 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:26,200 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:31,712 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:31] "GET /api/report/4 HTTP/1.1" 200 -
+2025-11-08 20:52:41,325 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:41] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:41,333 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:41] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:49,681 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:49,698 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:49,699 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:49,716 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:49,724 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:49,731 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:49] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:56,128 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:56,142 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:56] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:52:56,144 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:52:56,152 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:52:56] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:53:26,140 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:53:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:53:26,151 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:53:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:53:44,773 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-08 20:53:44,773 chatgpt_client INFO OPENAI_API_KEY detected (prefix=sk-proj-...)
+2025-11-08 20:53:44,773 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-08 20:53:44,773 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-08 20:53:44,778 data_container INFO DataContainer initialized with 4 existing cycles
+2025-11-08 20:53:44,778 main_application INFO Desktop Analyzer initialized.
+2025-11-08 20:53:44,778 main_application INFO Starting new screen analysis cycle...
+2025-11-08 20:53:44,778 main_application INFO Capturing screenshot...
+2025-11-08 20:53:47,829 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251108_205344.png
+2025-11-08 20:53:47,829 main_application INFO Analyzing screen content...
+2025-11-08 20:53:47,927 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-08 20:53:51,579 _screen_analyzer_original INFO Found 386 text elements.
+2025-11-08 20:53:51,579 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-08 20:53:51,594 _screen_analyzer_original INFO Detected 187 potential buttons and 15 potential windows.
+2025-11-08 20:53:51,602 main_application INFO Analysis report saved to: reports/screen_analysis_20251108_205351.json
+2025-11-08 20:53:51,602 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-08 20:53:51,618 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-08 20:53:51,618 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-08 20:53:52,156 chatgpt_client WARNING Received 401 for model gpt-4o-mini; retrying once with fallback model gpt-3.5-turbo
+2025-11-08 20:53:52,662 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:53:52,673 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 76, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 166, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:53:52,676 main_application INFO Cycle data saved to database.
+2025-11-08 20:53:52,780 data_container INFO Added cycle 5 to data container
+2025-11-08 20:53:52,780 main_application INFO Cycle data saved to data container.
+2025-11-08 20:54:36,184 data_container INFO DataContainer initialized with 5 existing cycles
+2025-11-08 20:54:36,184 data_viewer INFO Data Viewer initialized
+2025-11-08 20:54:36,236 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:54:36,246 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:54:36,246 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:54:37,431 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:37] "GET / HTTP/1.1" 200 -
+2025-11-08 20:54:37,453 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:37] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:54:37,463 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:37] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:54:40,318 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:40] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:54:40,324 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:40] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:54:43,184 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:43] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:54:43,191 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:43] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:54:43,667 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:43] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:54:43,675 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:43] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:54:51,555 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:51] "GET /api/report/5 HTTP/1.1" 200 -
+2025-11-08 20:54:54,619 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:54:54] "GET /api/screenshot/5 HTTP/1.1" 200 -
+2025-11-08 20:55:00,823 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:55:00] "GET /api/screenshot/4 HTTP/1.1" 200 -
+2025-11-08 20:55:07,678 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:55:07] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:55:07,693 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:55:07] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:55:14,812 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:55:14] "[36mGET /api/screenshot/4 HTTP/1.1[0m" 304 -
+2025-11-08 20:55:23,788 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:55:23] "[36mGET /api/screenshot/5 HTTP/1.1[0m" 304 -
