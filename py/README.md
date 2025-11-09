@@ -80,12 +80,18 @@ In interactive mode:
 sudo /Users/bburrell/Desktop/IO/py/venv/bin/python3 main.py
 ```
 
-### Alternative: Run without keyboard library (recommended for macOS)
-If you don't want to use sudo, you can:
+### Option 3: Launch the Data Viewer
+View all analysis cycle data in a web-based interface:
+```bash
+python3 main.py --viewer
+```
 
-1. Remove the `keyboard==0.13.5` line from `requirements.txt`
-2. Only use the `--once` mode: `python3 main.py --once`
-3. Or create a simple loop script that runs periodically
+This opens a web browser at `http://localhost:5000` with:
+- 📊 Real-time statistics dashboard
+- 🔍 Search and filter capabilities
+- 📋 Detailed view of each analysis cycle
+- 🖼️ Direct access to screenshots and reports
+- 🔄 Auto-refresh every 30 seconds
 
 ## Configuration
 
@@ -143,12 +149,46 @@ py/
 ├── action_executor.py          # Action execution module
 ├── config.py                   # Configuration loader
 ├── vision_processor.py         # Computer vision processing
+├── data_container.py           # Aggregated data storage system
+├── data_viewer.py              # Web-based data viewer application
 ├── requirements.txt            # Python dependencies
 ├── .env                        # Configuration (create from .env.example)
+├── data_container.json         # Persistent storage of analysis cycles
 ├── screenshots/                # Captured screenshots
 ├── reports/                    # Analysis reports (JSON)
 └── logs/                       # Application logs
 ```
+
+## Data Storage & Viewer
+
+The application includes a comprehensive data aggregation system:
+
+### Data Container (`data_container.py`)
+- **Aggregates all end-state data** from each analysis cycle
+- **Stores persistently** in `data_container.json`
+- **Tracks comprehensive metrics**:
+  - Screenshots and file paths
+  - Analysis reports and statistics
+  - ChatGPT responses and AI insights
+  - Processing times and error messages
+  - Cycle metadata and timestamps
+
+### Data Viewer (`data_viewer.py`)
+Launch with `python3 main.py --viewer` to access:
+- **📊 Real-time Statistics Dashboard**: Success rates, error rates, processing times
+- **🔍 Advanced Search & Filtering**: Find cycles by content, status, or date
+- **📋 Detailed Cycle Views**: Expandable cards showing full cycle information
+- **🖼️ Direct Media Access**: View screenshots and download reports
+- **🔄 Live Updates**: Auto-refreshes every 30 seconds as new data arrives
+
+### What Gets Stored
+Each analysis cycle captures:
+- **Screenshot** (PNG file)
+- **OCR Analysis** (text elements, confidence scores)
+- **Computer Vision** (UI elements, buttons, windows)
+- **Statistics** (element counts, processing metrics)
+- **AI Response** (ChatGPT analysis and recommendations)
+- **Metadata** (timestamps, processing time, errors)
 
 ## Example Usage
 

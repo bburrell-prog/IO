@@ -2095,3 +2095,186 @@ requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://a
 2025-11-07 16:27:37,507 action_executor INFO Parsed 0 actions from response.
 2025-11-07 16:27:37,508 action_executor WARNING No valid actions found in the response.
 2025-11-07 16:27:37,511 main_application INFO Cycle data saved to database.
+2025-11-08 20:11:51,223 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-08 20:11:51,224 chatgpt_client INFO OPENAI_API_KEY detected (prefix=sk-proj-...)
+2025-11-08 20:11:51,224 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-08 20:11:51,224 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-08 20:11:51,225 main_application INFO Desktop Analyzer initialized.
+2025-11-08 20:11:51,225 main_application INFO Starting new screen analysis cycle...
+2025-11-08 20:11:51,225 main_application INFO Capturing screenshot...
+2025-11-08 20:11:51,894 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251108_201151.png
+2025-11-08 20:11:51,894 main_application INFO Analyzing screen content...
+2025-11-08 20:11:51,966 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-08 20:11:55,087 _screen_analyzer_original INFO Found 494 text elements.
+2025-11-08 20:11:55,088 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-08 20:11:55,105 _screen_analyzer_original INFO Detected 135 potential buttons and 1 potential windows.
+2025-11-08 20:11:55,114 main_application INFO Analysis report saved to: reports/screen_analysis_20251108_201155.json
+2025-11-08 20:11:55,115 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-08 20:11:55,122 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-08 20:11:55,122 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-08 20:11:55,464 chatgpt_client WARNING Received 401 for model gpt-4o-mini; retrying once with fallback model gpt-3.5-turbo
+2025-11-08 20:11:55,654 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:11:55,665 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 71, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 166, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:11:55,670 main_application INFO Cycle data saved to database.
+2025-11-08 20:17:28,837 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-08 20:17:28,838 chatgpt_client INFO OPENAI_API_KEY detected (prefix=sk-proj-...)
+2025-11-08 20:17:28,838 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-08 20:17:28,838 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-08 20:17:28,838 data_container INFO DataContainer initialized with 0 existing cycles
+2025-11-08 20:17:28,838 main_application INFO Desktop Analyzer initialized.
+2025-11-08 20:17:28,838 main_application INFO Starting new screen analysis cycle...
+2025-11-08 20:17:28,838 main_application INFO Capturing screenshot...
+2025-11-08 20:17:29,479 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251108_201728.png
+2025-11-08 20:17:29,479 main_application INFO Analyzing screen content...
+2025-11-08 20:17:29,568 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-08 20:17:33,005 _screen_analyzer_original INFO Found 473 text elements.
+2025-11-08 20:17:33,005 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-08 20:17:33,036 _screen_analyzer_original INFO Detected 181 potential buttons and 1 potential windows.
+2025-11-08 20:17:33,048 main_application INFO Analysis report saved to: reports/screen_analysis_20251108_201733.json
+2025-11-08 20:17:33,048 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-08 20:17:33,057 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-08 20:17:33,057 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-08 20:17:33,473 chatgpt_client WARNING Received 401 for model gpt-4o-mini; retrying once with fallback model gpt-3.5-turbo
+2025-11-08 20:17:33,774 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:17:33,784 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 76, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 166, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:17:33,788 main_application INFO Cycle data saved to database.
+2025-11-08 20:17:33,829 data_container INFO Added cycle 1 to data container
+2025-11-08 20:17:33,829 main_application INFO Cycle data saved to data container.
+2025-11-08 20:17:38,330 data_container INFO DataContainer initialized with 1 existing cycles
+2025-11-08 20:19:28,225 data_container INFO DataContainer initialized with 1 existing cycles
+2025-11-08 20:19:28,225 data_viewer INFO Data Viewer initialized
+2025-11-08 20:19:28,784 data_viewer INFO Web viewer starting at http://localhost:5000
+2025-11-08 20:19:28,813 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://149.43.204.50:5000
+2025-11-08 20:19:28,813 werkzeug INFO [33mPress CTRL+C to quit[0m
+2025-11-08 20:19:30,913 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:30] "GET / HTTP/1.1" 200 -
+2025-11-08 20:19:31,171 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:31] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:19:31,276 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:31] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:19:31,279 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-08 20:19:35,431 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:35] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:19:35,439 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:35] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:19:40,262 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:40] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:19:40,273 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:19:40] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:20:01,180 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:01] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:20:01,191 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:01] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:20:14,607 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-08 20:20:14,607 chatgpt_client INFO OPENAI_API_KEY detected (prefix=sk-proj-...)
+2025-11-08 20:20:14,608 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-08 20:20:14,608 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-08 20:20:14,610 data_container INFO DataContainer initialized with 1 existing cycles
+2025-11-08 20:20:14,610 main_application INFO Desktop Analyzer initialized.
+2025-11-08 20:20:14,610 main_application INFO Starting new screen analysis cycle...
+2025-11-08 20:20:14,610 main_application INFO Capturing screenshot...
+2025-11-08 20:20:17,944 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251108_202014.png
+2025-11-08 20:20:17,944 main_application INFO Analyzing screen content...
+2025-11-08 20:20:18,058 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-08 20:20:19,602 _screen_analyzer_original INFO Found 64 text elements.
+2025-11-08 20:20:19,602 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-08 20:20:19,622 _screen_analyzer_original INFO Detected 412 potential buttons and 17 potential windows.
+2025-11-08 20:20:19,628 main_application INFO Analysis report saved to: reports/screen_analysis_20251108_202019.json
+2025-11-08 20:20:19,628 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-08 20:20:19,643 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-08 20:20:19,643 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-08 20:20:20,467 chatgpt_client WARNING Received 401 for model gpt-4o-mini; retrying once with fallback model gpt-3.5-turbo
+2025-11-08 20:20:21,227 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:20:21,236 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 76, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 166, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:20:21,240 main_application INFO Cycle data saved to database.
+2025-11-08 20:20:21,295 data_container INFO Added cycle 2 to data container
+2025-11-08 20:20:21,295 main_application INFO Cycle data saved to data container.
+2025-11-08 20:20:26,380 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:26] "GET / HTTP/1.1" 200 -
+2025-11-08 20:20:26,427 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:26] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:20:26,445 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:26] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:20:34,109 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:34] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:20:34,113 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:34] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:20:35,411 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:35] "GET /api/cycles HTTP/1.1" 200 -
+2025-11-08 20:20:35,420 werkzeug INFO 127.0.0.1 - - [08/Nov/2025 20:20:35] "GET /api/stats HTTP/1.1" 200 -
+2025-11-08 20:20:48,689 _screen_analyzer_original INFO Screen dimensions detected: 1470x956
+2025-11-08 20:20:48,689 chatgpt_client INFO OPENAI_API_KEY detected (prefix=sk-proj-...)
+2025-11-08 20:20:48,689 chatgpt_client INFO ChatGPTClient initialized for model: gpt-4o-mini
+2025-11-08 20:20:48,689 action_executor INFO ActionExecutor initialized with action delay 0.50s.
+2025-11-08 20:20:48,692 data_container INFO DataContainer initialized with 2 existing cycles
+2025-11-08 20:20:48,692 main_application INFO Desktop Analyzer initialized.
+2025-11-08 20:20:48,692 main_application INFO Starting new screen analysis cycle...
+2025-11-08 20:20:48,692 main_application INFO Capturing screenshot...
+2025-11-08 20:20:51,989 _screen_analyzer_original INFO Screenshot saved to: screenshots/screenshot_20251108_202048.png
+2025-11-08 20:20:51,989 main_application INFO Analyzing screen content...
+2025-11-08 20:20:52,088 _screen_analyzer_original INFO Extracting text with Tesseract OCR...
+2025-11-08 20:20:53,517 _screen_analyzer_original INFO Found 55 text elements.
+2025-11-08 20:20:53,517 _screen_analyzer_original INFO Detecting UI elements with OpenCV...
+2025-11-08 20:20:53,532 _screen_analyzer_original INFO Detected 414 potential buttons and 19 potential windows.
+2025-11-08 20:20:53,538 main_application INFO Analysis report saved to: reports/screen_analysis_20251108_202053.json
+2025-11-08 20:20:53,538 main_application INFO Sending analysis to ChatGPT for action generation...
+2025-11-08 20:20:53,552 chatgpt_client INFO Including screenshot in vision analysis request
+2025-11-08 20:20:53,552 chatgpt_client INFO Sending request to OpenAI API...
+2025-11-08 20:20:54,045 chatgpt_client WARNING Received 401 for model gpt-4o-mini; retrying once with fallback model gpt-3.5-turbo
+2025-11-08 20:20:54,434 chatgpt_client ERROR API request failed with HTTP error: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:20:54,444 main_application ERROR An error occurred during the analysis cycle: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+Traceback (most recent call last):
+  File "/Users/bburrell/Desktop/IO/py/Main Application.py", line 76, in run_analysis_cycle
+    chatgpt_response = self.chatgpt_client.get_actions_from_report(analysis_report, screenshot_path)
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 166, in get_actions_from_report
+    resp = self._make_api_request([system, user])
+  File "/Users/bburrell/Desktop/IO/py/chatgpt_client.py", line 92, in _make_api_request
+    resp.raise_for_status()
+  File "/Users/bburrell/Desktop/IO/py/venv/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.openai.com/v1/chat/completions
+2025-11-08 20:20:54,448 main_application INFO Cycle data saved to database.
+2025-11-08 20:20:54,523 data_container INFO Added cycle 3 to data container
+2025-11-08 20:20:54,523 main_application INFO Cycle data saved to data container.

@@ -18,6 +18,7 @@ from chatgpt_client import ChatGPTClient
 from action_executor import ActionExecutor
 from config import Config
 from database import CycleDatabase
+from data_container import DataContainer
 
 # Configure logging to file and console
 logging.basicConfig(
@@ -42,10 +43,14 @@ class DesktopAnalyzer:
         self.chatgpt_client = ChatGPTClient(api_key=self.config.openai_api_key, model="gpt-4o-mini")
         self.action_executor = ActionExecutor(self.config)
         self.db = CycleDatabase()
+        self.data_container = DataContainer()
         logger.info("Desktop Analyzer initialized.")
 
     def run_analysis_cycle(self):
         """Runs a single, complete analysis cycle."""
+        start_time = time.time()
+        error_message = None
+
         try:
             logger.info("Starting new screen analysis cycle...")
 
@@ -82,7 +87,11 @@ class DesktopAnalyzer:
                 logger.error("Failed to get a valid response from ChatGPT.")
 
         except Exception as e:
+            error_message = str(e)
             logger.error(f"An error occurred during the analysis cycle: {e}", exc_info=True)
+
+        # Calculate processing time
+        processing_time = time.time() - start_time
 
         # Save cycle to database regardless of success/failure
         try:
@@ -96,6 +105,23 @@ class DesktopAnalyzer:
             logger.info("Cycle data saved to database.")
         except Exception as e:
             logger.error(f"Failed to save cycle to database: {e}")
+
+        # Save comprehensive cycle data to data container
+        try:
+            cycle_data = {
+                'timestamp': timestamp,
+                'screenshot_path': str(screenshot_path) if 'screenshot_path' in locals() else None,
+                'report_path': str(report_path) if 'report_path' in locals() else None,
+                'analysis_report': analysis_report if 'analysis_report' in locals() else None,
+                'statistics': statistics_summary if 'statistics_summary' in locals() else None,
+                'chatgpt_response': chatgpt_response if 'chatgpt_response' in locals() else None,
+                'error_message': error_message,
+                'processing_time': processing_time
+            }
+            self.data_container.add_cycle(cycle_data)
+            logger.info("Cycle data saved to data container.")
+        except Exception as e:
+            logger.error(f"Failed to save cycle to data container: {e}")
 
     def _save_analysis_report(self, report: dict) -> Path:
         """Saves the analysis report to a JSON file."""
@@ -268,6 +294,7 @@ def main():
         # Database controller flags:
         #  --db       : open the web-based controller (default, safe)
         #  --db-gui   : attempt to open the Tkinter GUI controller (may abort on some macOS setups)
+        #  --viewer   : launch the data viewer application
         if len(sys.argv) > 1 and sys.argv[1] in ('--db', '--db-gui'):
             import subprocess
             script_dir = Path(__file__).parent
@@ -300,6 +327,16 @@ def main():
                     logger.error(f"Failed to start web DB controller: {e}", exc_info=True)
             else:
                 logger.error("No database controller available (neither GUI nor web).")
+
+        # Data viewer launch
+        if len(sys.argv) > 1 and sys.argv[1] == '--viewer':
+            try:
+                from data_viewer import main as viewer_main
+                viewer_main()
+                return
+            except Exception as e:
+                logger.error(f"Failed to launch data viewer: {e}", exc_info=True)
+                sys.exit(1)
 
         analyzer = DesktopAnalyzer()
         # Run once if '--once' argument is provided, otherwise run in interactive mode

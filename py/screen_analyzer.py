@@ -93,9 +93,12 @@ if orig_loaded:
                             result.setdefault("cv_analysis", {})
                             result["cv_analysis"].update(cv_out)
                     except Exception:
+                        logging.exception("Vision processor failed for %s", screenshot_path)
             finally:
                 # Compute and display HSV statistics regardless of earlier errors
-                self._compute_and_display_hsv_stats(screenshot_path)
+                try:
+                    self._compute_and_display_hsv_stats(screenshot_path)
+                except Exception:
                     logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
 
             return result
@@ -159,7 +162,9 @@ else:
                     raise RuntimeError("No vision processor available to analyze screenshots")
             finally:
                 # Compute and display HSV statistics regardless of earlier errors
-                self._compute_and_display_hsv_stats(screenshot_path)
+                try:
+                    self._compute_and_display_hsv_stats(screenshot_path)
+                except Exception:
                     logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
 
             return result
