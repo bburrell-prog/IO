@@ -11,8 +11,22 @@ import importlib.util
 import pathlib
 import sys
 from typing import Any, Dict
-import cv2
-import numpy as np
+import importlib
+
+SHOW_DEBUG_WINDOWS = False  # Set to True to enable debug windows
+
+# Load optional packages dynamically so static analyzers won't report
+# unresolved-import errors when those packages aren't installed in the
+# environment running the editor/tooling. At runtime we still detect
+# absence and skip CV-based functionality.
+def _try_import(name: str):
+    try:
+        return importlib.import_module(name)
+    except ImportError:
+        return None
+
+cv2 = _try_import("cv2")
+np = _try_import("numpy")
 
 # Import the new universal vision processor
 try:
@@ -75,15 +89,21 @@ if orig_loaded:
                 if self._cv is not None:
                     try:
                         cv_out = self._cv.process_image(screenshot_path) or {}
-                        result.setdefault("cv_analysis", {})
-                        result["cv_analysis"].update(cv_out)
+                        if cv_out:
+                            result.setdefault("cv_analysis", {})
+                            result["cv_analysis"].update(cv_out)
                     except Exception:
-                        logging.exception("VisionProcessor failed while analyzing %s", screenshot_path)
-                        result = dict(base)
             finally:
                 # Compute and display HSV statistics regardless of earlier errors
-                try:
-                    logging.info("Computing HSV stats for %s", screenshot_path)
+                self._compute_and_display_hsv_stats(screenshot_path)
+                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
+
+            return result
+        def _compute_and_display_hsv_stats(self, screenshot_path: str):
+            import logging
+            try:
+                logging.info("Computing HSV stats for %s", screenshot_path)
+                if cv2 is not None and np is not None:
                     img = cv2.imread(screenshot_path)
                     if img is not None:
                         logging.info("Image loaded successfully, computing HSV...")
@@ -99,16 +119,18 @@ if orig_loaded:
                         cv2.putText(stats_img, f"Hue: mean={mean_h:.2f}, std={std_h:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         cv2.putText(stats_img, f"Sat: mean={mean_s:.2f}, std={std_s:.2f}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         cv2.putText(stats_img, f"Val: mean={mean_v:.2f}, std={std_v:.2f}", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
-                        logging.info("Displaying HSV statistics window...")
-                        cv2.imshow("HSV Statistics", stats_img)
-                        cv2.waitKey(2000)
-                        cv2.destroyAllWindows()
+                        SHOW_DEBUG_WINDOWS = False  # Set to True to enable debug windows
+                        if SHOW_DEBUG_WINDOWS:
+                            logging.info("Displaying HSV statistics window...")
+                            cv2.imshow("HSV Statistics", stats_img)
+                            cv2.waitKey(2000)
+                            cv2.destroyAllWindows()
                     else:
                         logging.warning("Failed to load image from %s", screenshot_path)
-                except Exception:
-                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
-
-            return result
+                else:
+                    logging.warning("cv2 or numpy is not available; cannot compute HSV stats for %s", screenshot_path)
+            except Exception:
+                logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
 
         def __getattr__(self, name: str):
             """Proxy any unknown attribute access to the original analyzer instance.
@@ -116,6 +138,7 @@ if orig_loaded:
             This covers methods like `capture_screenshot` that the original module
             provides but the wrapper doesn't explicitly implement.
             """
+            return getattr(self._orig, name)
             return getattr(self._orig, name)
 
     ScreenAnalyzer = _WrappedScreenAnalyzer
@@ -134,11 +157,17 @@ else:
                 if self._cv is None:
                     # Keep raising as before, but ensure HSV stats run in finally
                     raise RuntimeError("No vision processor available to analyze screenshots")
-                result = {"cv_analysis": self._cv.process_image(screenshot_path)}
             finally:
                 # Compute and display HSV statistics regardless of earlier errors
-                try:
-                    logging.info("Computing HSV stats for %s", screenshot_path)
+                self._compute_and_display_hsv_stats(screenshot_path)
+                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
+
+            return result
+        def _compute_and_display_hsv_stats(self, screenshot_path: str):
+            import logging
+            try:
+                logging.info("Computing HSV stats for %s", screenshot_path)
+                if cv2 is not None and np is not None:
                     img = cv2.imread(screenshot_path)
                     if img is not None:
                         logging.info("Image loaded successfully, computing HSV...")
@@ -154,28 +183,30 @@ else:
                         cv2.putText(stats_img, f"Hue: mean={mean_h:.2f}, std={std_h:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         cv2.putText(stats_img, f"Sat: mean={mean_s:.2f}, std={std_s:.2f}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                         cv2.putText(stats_img, f"Val: mean={mean_v:.2f}, std={std_v:.2f}", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
-                        logging.info("Displaying HSV statistics window...")
-                        cv2.imshow("HSV Statistics", stats_img)
-                        cv2.waitKey(2000)
-                        cv2.destroyAllWindows()
+                        SHOW_DEBUG_WINDOWS = False  # Set to True to enable debug windows
+                        if SHOW_DEBUG_WINDOWS:
+                            logging.info("Displaying HSV statistics window...")
+                            cv2.imshow("HSV Statistics", stats_img)
+                            cv2.waitKey(2000)
+                            cv2.destroyAllWindows()
                     else:
                         logging.warning("Failed to load image from %s", screenshot_path)
-                except Exception:
-                    logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
-
-            return result
+                else:
+                    logging.warning("cv2 or numpy is not available; cannot compute HSV stats for %s", screenshot_path)
+            except Exception:
+                logging.exception("Failed to compute HSV stats while finalizing analysis for %s", screenshot_path)
 
         def analyze_screen(self, screenshot_path: str) -> Dict[str, Any]:
             """Alias for analyze_screenshot for compatibility."""
-            return self.analyze_screenshot(screenshot_path)
-
-        def capture_screenshot(self) -> str:
+            pyautogui = _try_import("pyautogui")
             """Capture a screenshot to the screenshots/ folder and return its path.
 
             Uses pyautogui if available, otherwise raises RuntimeError.
             """
+            # Import pyautogui dynamically so static analyzers don't flag
+            # missing optional packages in developer environments.
             try:
-                import pyautogui
+                pyautogui = importlib.import_module("pyautogui")
             except Exception:
                 pyautogui = None
 

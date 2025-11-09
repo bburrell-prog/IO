@@ -17,6 +17,7 @@ from screen_analyzer import ScreenAnalyzer
 from chatgpt_client import ChatGPTClient
 from action_executor import ActionExecutor
 from config import Config
+from database import CycleDatabase
 
 # Configure logging to file and console
 logging.basicConfig(
@@ -36,14 +37,19 @@ class DesktopAnalyzer:
         """Initializes all components of the analyzer."""
         self.config = Config()
         self.screen_analyzer = ScreenAnalyzer(self.config)
-        self.chatgpt_client = ChatGPTClient(self.config.openai_api_key)
+        # Construct ChatGPTClient explicitly: pass api_key by name to avoid
+        # it being treated as the 'model' positional argument.
+        self.chatgpt_client = ChatGPTClient(api_key=self.config.openai_api_key, model="gpt-4o-mini")
         self.action_executor = ActionExecutor(self.config)
+        self.db = CycleDatabase()
         logger.info("Desktop Analyzer initialized.")
 
     def run_analysis_cycle(self):
         """Runs a single, complete analysis cycle."""
         try:
             logger.info("Starting new screen analysis cycle...")
+
+            timestamp = time.strftime("%Y%m%d_%H%M%S")
 
             # 1. Capture and analyze the screen
             logger.info("Capturing screenshot...")
@@ -77,6 +83,19 @@ class DesktopAnalyzer:
 
         except Exception as e:
             logger.error(f"An error occurred during the analysis cycle: {e}", exc_info=True)
+
+        # Save cycle to database regardless of success/failure
+        try:
+            self.db.insert_cycle(
+                timestamp=timestamp,
+                screenshot_path=str(screenshot_path) if 'screenshot_path' in locals() else None,
+                report_path=str(report_path) if 'report_path' in locals() else None,
+                chatgpt_response=chatgpt_response if 'chatgpt_response' in locals() else None,
+                statistics=statistics_summary if 'statistics_summary' in locals() else None
+            )
+            logger.info("Cycle data saved to database.")
+        except Exception as e:
+            logger.error(f"Failed to save cycle to database: {e}")
 
     def _save_analysis_report(self, report: dict) -> Path:
         """Saves the analysis report to a JSON file."""
@@ -246,6 +265,42 @@ class DesktopAnalyzer:
 def main():
     """Main entry point for the application."""
     try:
+        # Database controller flags:
+        #  --db       : open the web-based controller (default, safe)
+        #  --db-gui   : attempt to open the Tkinter GUI controller (may abort on some macOS setups)
+        if len(sys.argv) > 1 and sys.argv[1] in ('--db', '--db-gui'):
+            import subprocess
+            script_dir = Path(__file__).parent
+            gui_script = script_dir / 'database_controller.py'
+            web_script = script_dir / 'database_controller_web.py'
+
+            # If user explicitly requested the GUI, try it; otherwise default to web
+            want_gui = sys.argv[1] == '--db-gui'
+
+            if want_gui and gui_script.exists():
+                try:
+                    proc = subprocess.run([sys.executable, str(gui_script)], timeout=8)
+                    if proc.returncode == 0:
+                        return
+                    else:
+                        logger.warning(f"GUI controller exited with code {proc.returncode}, falling back to web controller")
+                except subprocess.TimeoutExpired:
+                    # The GUI probably started and is running; assume success
+                    return
+                except Exception:
+                    logger.exception("Failed to launch GUI controller; falling back to web controller")
+
+            # Default/web controller path
+            if web_script.exists():
+                try:
+                    from database_controller_web import main as web_main
+                    web_main()
+                    return
+                except Exception as e:
+                    logger.error(f"Failed to start web DB controller: {e}", exc_info=True)
+            else:
+                logger.error("No database controller available (neither GUI nor web).")
+
         analyzer = DesktopAnalyzer()
         # Run once if '--once' argument is provided, otherwise run in interactive mode
         if len(sys.argv) > 1 and sys.argv[1] == '--once':

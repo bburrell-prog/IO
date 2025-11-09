@@ -51,7 +51,15 @@ class ChatGPTClient:
         self.model = model if inferred_api_key is None else (api_key or os.getenv("DEFAULT_MODEL", "gpt-4o"))
         self.api_key = api_key or inferred_api_key or os.getenv("OPENAI_API_KEY")
 
-        if not self.api_key:
+        # Safe diagnostic: log only a short prefix of the API key so we can
+        # confirm the running process sees the same key without exposing secrets
+        if self.api_key:
+            try:
+                prefix = self.api_key[:8]
+                LOG.info("OPENAI_API_KEY detected (prefix=%s...)", prefix)
+            except Exception:
+                LOG.info("OPENAI_API_KEY detected (prefix unavailable)")
+        else:
             LOG.critical("OPENAI_API_KEY not found in environment or constructor. Set OPENAI_API_KEY in .env or pass api_key param.")
             raise RuntimeError("OPENAI_API_KEY not configured")
 
@@ -85,6 +93,19 @@ class ChatGPTClient:
                 return resp.json()
             except requests.exceptions.HTTPError as e:
                 status = getattr(e.response, "status_code", None)
+                # If unauthorized, try a safe fallback to a more widely-available model
+                # (some API keys don't have access to newer models). Only retry once
+                # with the fallback model to avoid loops.
+                if status == 401 and self.model != "gpt-3.5-turbo":
+                    LOG.warning("Received 401 for model %s; retrying once with fallback model gpt-3.5-turbo", self.model)
+                    payload["model"] = "gpt-3.5-turbo"
+                    try:
+                        resp = self.session.post(OPENAI_API_URL, headers=headers, json=payload, timeout=60)
+                        resp.raise_for_status()
+                        return resp.json()
+                    except Exception:
+                        # fall through to normal error handling/logging below
+                        pass
                 # Retry on rate limit or server errors
                 if status in (429, 500, 502, 503, 504) and attempt <= self.max_retries:
                     jitter = random.uniform(0, 0.5)
